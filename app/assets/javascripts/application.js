@@ -11,15 +11,17 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require handlebars
 //= require jquery_ujs
+//= require_tree ./lib
 //= require ./vendor/ember
 //= require ./vendor/ember-resource
-//= require_tree ./lib
-//= require app/app
+//= require_self
+//= require zenlabs_beta
 //= require_tree ./app/models
 //= require_tree ./app/controllers
 //= require_tree ./app/views
 //= require_tree ./app/helpers
 //= require_tree ./app/templates
-//= require_tree .
-
+//= require ./app/router
+//= require_tree ./app/routes
