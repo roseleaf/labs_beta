@@ -15,7 +15,9 @@ group :assets do
   # gem 'coffee-rails', '~> 3.2.1'
   gem 'bootstrap-sass', "2.0.3.1"
   gem 'ember-rails'
+  gem 'ember-source', '1.0.0.rc4' 
   gem 'handlebars_assets'  
+  gem 'handlebars-source'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
   gem 'css_parser'

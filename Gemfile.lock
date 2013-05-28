@@ -52,7 +52,7 @@ GEM
       ember-source (>= 1.0.0.rc2.2)
       execjs (>= 1.2)
       railties (>= 3.1)
-    ember-source (1.0.0.rc3.4)
+    ember-source (1.0.0.rc4)
       handlebars-source (= 1.0.0.rc4)
     erubis (2.7.0)
     execjs (1.4.0)
@@ -152,6 +152,8 @@ DEPENDENCIES
   bootstrap-sass (= 2.0.3.1)
   css_parser
   ember-rails
+  ember-source (= 1.0.0.rc4)
+  handlebars-source
   handlebars_assets
   jasmine
   jquery-rails
