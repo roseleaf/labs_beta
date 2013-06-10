@@ -1,3 +1,4 @@
+//= require sprockets/commonjs
 //= require handlebars
 //= require jquery
 //= require jquery_ujs
@@ -8,8 +9,8 @@
 define( 'ZenlabsBeta',
   [
     'ember',
-    'models/extension',
-    'controllers/extension'
+    'models/extension.module',
+    'controllers/extension.module'
   ],
  
   function(Ember, ExtensionModel, ExtensionController) {
