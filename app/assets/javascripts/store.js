@@ -1,6 +1,5 @@
 ZenlabsBeta.Store = DS.Store.extend({
-  revision: 11,
-  adapter: DS.RESTAdapter.create({
-    namespace: 'api/v1'
-  })
+  url: 'http://zenlabs_beta.dev',
+  namespace: 'api/v1',
+  revision: 11
 });

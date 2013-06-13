@@ -1,17 +1,9 @@
-//= require handlebars
-//= require ember
-ZenlabsBeta = Ember.Application.create();
-
-ZenlabsBeta.displayError = function(e) {
-  if (typeof e === 'string') {
-    // display error strings
-    alert(e);
-  }
-  else if (typeof e === 'object' && e.responseText !== undefined) {
-    // TODO - further process json errors
-    alert(e.responseText);
-  }
-  else {
-    alert("An unexpected error occurred.");
-  }
-};
+//= require ./store
+//= require_tree ./models
+//= require_tree ./controllers
+//= require_tree ./views
+//= require_tree ./helpers
+//= require_tree ./templates
+//= require ./router
+//= require_tree ./routes
+//= require_self
