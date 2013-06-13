@@ -1,7 +1,9 @@
 <div id = "container">
 	<h1>Ember#start</h1>
 	<p>Find me in app/views/ember/start.html.erb</p>
-	<script type="text/x-handlebars">
+	 <script type="text/x-handlebars" data-template-name="application">
+	         {{view  ZenlabsBeta.ListExtensionsView }}
+
 		<div class='container' id='main'>
 		  <div class='content'>
 		    <div class='row'>
@@ -16,27 +18,5 @@
 
 
 
-	 <script type="text/x-handlebars" id="extensions">
-	    <div class="container-fluid">
-	      <div class="row-fluid">
-	        <div class="span3">
-	          <table class="table">
-	            <thead>
-	              <tr><th>Extensions</th></tr>
-	            </thead>
-	            {{#each model}}
-	            <tr><td>
- // <small class="muted">by {{author}}</small>
-	            
-	              {{#linkTo 'extension' this}}{{name}}{{/linkTo}}
-	            </td></tr>
-	            {{/each}}
-	          </table>
-	        </div>
-	        <div class="span9">
-	          {{outlet}}
-	        </div>
-	      </div>
-	    </div>
-	  </script>
+
 </div>

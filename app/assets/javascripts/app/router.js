@@ -1,13 +1,30 @@
-define('ZenlabsBeta.Router', ['zenlabs_beta'], function(ZenlabsBeta){
-	ZenlabsBeta.Router.map(function() {
-	  this.resource('extensions', { path: '/extensions'}, function() {
-	    this.resource('extension', { path: ':extension_id' });
-	  });
-	  this.route('extensions');
-	});
+ZenlabsBeta.Router.map(function() {    
+  this.resource("extensions", { path: '/extensions' });
+  this.resource("extension",  { path: "/extensions/:refId" }, function() {
+    this.route("delete");
+  });
+});
 
-	return ZenlabsBeta.Router;
+ZenlabsBeta.IndexRoute = Ember.Route.extend({
+  redirect: function() {
+    this.transitionTo('extensions');
+  }
+});
 
+ZenlabsBeta.ExtensionsRoute = Ember.Route.extend({
+  model: function() {
+    return ZenlabsBeta.Extension.find();
+  }
+});
+
+ZenlabsBeta.ExtensionRoute = Ember.Route.extend({
+  model: function(params) {
+    return ZenlabsBeta.Extension.find(params.refId);
+  },
+  // overwrite default serializer (defaults to 'id', member has 'refId')
+  serialize: function(model) {
+    return { refId: model.refId };
+  }
 });
 
 

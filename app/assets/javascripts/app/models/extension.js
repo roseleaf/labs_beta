@@ -1,17 +1,16 @@
-define('extensionModel', ['ember'], function( Ember ){
+ZenlabsBeta.Extension = DS.Model.extend({
+  resourceUrl:        'api/v1/extensions',
+  name: DS.attr('string'),
+  notes: DS.attr('string'),
 
+  validate: function() {
+    if (this.get('name') === undefined || this.get('name') === '' ||
+        this.get('notes') === undefined  || this.get('notes') === '') {
+      return 'Contacts require a first and a last name.';
+    }
+  },
 
-	ExtensionModel = Ember.Object.extend({
-		url: '/api/v1/extensions',
-		schema: {
-			name: String,
-			downloadURL: { type: String, path: 'download_url' },
-			shortDescription: { type: String, path: 'short_description' },
-			notes: String,
-			category: String,
-			interfaceType: { type: String, path: 'interface' },
-			authorType: { type: String, path: 'author_type' }
-		}
-	});
-	return ExtensionModel;
+  fullName: Ember.computed(function() {
+    return this.get('name') + ' ' + this.get('notes');
+  }).property('name', 'notes')
 });

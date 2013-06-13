@@ -1,10 +1,17 @@
 //= require handlebars
 //= require ember
-//= require_tree ./app/models
-//= require_tree ./app/controllers
-//= require_tree ./app/views
-//= require_tree ./app/helpers
-//= require_tree ./app/templates
-//= require ./app/router
-//= require_tree ./app/routes
-//= require_self
+ZenlabsBeta = Ember.Application.create();
+
+ZenlabsBeta.displayError = function(e) {
+  if (typeof e === 'string') {
+    // display error strings
+    alert(e);
+  }
+  else if (typeof e === 'object' && e.responseText !== undefined) {
+    // TODO - further process json errors
+    alert(e.responseText);
+  }
+  else {
+    alert("An unexpected error occurred.");
+  }
+};
