@@ -1,6 +1,19 @@
-<h1>extensions</h1>
-<ul>
-{{#each extensions }}
-	<li>hey {{name}}</li>
-{{/each}}
-</ul>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span3">
+      <table class="table">
+        <thead>
+          <tr><th>Extensions</th></tr>
+        </thead>
+        {{#each model}}
+        <tr><td>
+          {{#linkTo 'extension' this}}{{name}}{{/linkTo}}
+        </td></tr>
+        {{/each}}
+      </table>
+    </div>
+    <div class="span9">
+      {{outlet}}
+    </div>
+  </div>
+</div>  

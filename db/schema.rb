@@ -11,13 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130527195226) do
+ActiveRecord::Schema.define(:version => 20130618200846) do
 
   create_table "extensions", :force => true do |t|
     t.string "name"
     t.string "download_url"
     t.string "short_description"
-    t.string "notes"
+    t.text   "notes"
     t.string "category"
     t.string "interface"
     t.string "author_type"

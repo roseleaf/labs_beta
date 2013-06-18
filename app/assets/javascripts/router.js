@@ -1,4 +1,7 @@
 ZenlabsBeta.Router.map(function() {
-  this.resource('extensions', { path: '/extensions/list' }, function() {
-    this.route('list');
-  });});
+  this.route("getStarted", {path: "getstarted"});
+  this.route("home", {path: "index"});	
+  this.resource('extensions', function() {
+    this.resource('extension', { path: '/:extension_id'});
+  });
+});

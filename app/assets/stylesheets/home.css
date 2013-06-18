@@ -1,0 +1,92 @@
+
+
+.top-five{list-style: none; float: none; text-align: center; margin-top: 40px;}
+.top-five a{ color: #1843AF;}
+.top-five li{
+  width: 320px;
+  height: 365px;
+  float: left;
+  margin-left: 11px;
+  margin-bottom: 11px;
+  padding: 4px 10px 10px 10px;
+    box-shadow: 0 0 5px #d6d6d6;
+  -webkit-box-shadow: 0 0 5px #d6d6d6;
+  -moz-box-shadow: 0 0 5px #d6d6d6;
+  -o-box-shadow: 0 0 5px #d6d6d6;
+  -ms-box-shadow: 0 0 5px #d6d6d6;
+  box-shadow: inset 0px 13px 39px #E6E6E6;
+  display: inline;
+}
+
+.top-five li img{
+  height: 160px;
+  width: 175px;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.top-five h4{ text-transform: uppercase; margin: 18px 0 25px 0;}
+.top-five h4 a{ color: #000000;}
+.whitebox h2, .whitebox h1{
+  text-transform: uppercase;
+}
+.new{
+  background-color: #D7F183;
+  padding: 2px 3px 2px 9px;
+  margin-right: 12px;
+  border-radius: 3px;
+  color: #038503;
+}
+#summary{
+/*  background-color: #A7D329;*/
+display: none;
+  background-color: #8BAA49;
+  padding: 10px 30px 20px 30px;
+  margin-left: -25px;
+  margin-bottom: 25px; 
+}
+#summary h4{
+  text-shadow: none;
+  color: white;  
+}
+.bottom-right-link{
+  float: right;
+  color: white;
+  background-color: #F8B21F;
+  background-image: -webkit-linear-gradient(top,#FFC154,#E47601);
+  background-image: -moz-linear-gradient(top,#FFC154,#E47601);
+  background-image: -o-linear-gradient(top,#FFC154,#E47601);
+  background-image: linear-gradient(to bottom,#FFC154,#E47601);
+/*  background-image: url('../images/noise-orange.png'),-webkit-gradient(linear,0% 0%,0% 100%,from(#FFC154),to(#CE6C04));
+*/  text-shadow: #B94B00 0px 1px 0px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1px 10px 5px;
+  cursor: pointer;
+}
+.bottom-right-link:hover{-webkit-gradient(linear,left top,left bottom,from(#ffc154),to(#e47601));
+  background:-moz-linear-gradient(top,#ffc154,#e47601);
+  box-shadow:inset 0px 0px 0px 0px #e08805;
+  color:#fff
+}
+.hidden{
+  width: 919px;
+  height: 230px;
+  background-color: #f4f8de;
+  border: 3px solid #f6f6f6;
+  border-radius: none;
+  display: none;
+  float: left;
+  margin: -10px 0 10px 10px;
+  text-align: left;
+}
+.hidden:nth-of-type(1){
+  width: 835px;
+}
+.hidden p{
+  padding: 10px 20px 10px 30px;
+  font-family: 'DINNextLTPro-Regular';
+}

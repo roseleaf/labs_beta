@@ -1,0 +1,22 @@
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+<!--           <img src="images/beaker.png">
+-->
+      {{#linkTo 'index'}}<h1 id="project_title">ZENLABS<span style="display:inline-block; font-size:14px; text-shadow:none; margin-left: 4px;">Beta</span></h1>{{/linkTo}}
+    </header>
+    <div id="top-nav">
+      <ul id="navbar">
+        <li>{{#linkTo 'index'}}Home{{/linkTo}}</li>
+        <li>{{#linkTo 'getStarted'}}Getting Started{{/linkTo}}</li>
+        <li>{{#linkTo 'extensions'}}App Directory{{/linkTo}}</li>
+        <li><a href="http://developer.zendesk.com/" target="_blank">Developer Site</a></li>
+      </ul>
+    </div>
+</div>
+
+<div class='container' id='main'>
+  <div class='content'>
+    {{outlet}}
+  </div>
+</div>

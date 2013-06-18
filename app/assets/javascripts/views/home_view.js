@@ -1,0 +1,1 @@
+ZenlabsBeta.HomeView = Ember.View.extend({});

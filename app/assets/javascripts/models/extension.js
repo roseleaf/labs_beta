@@ -1,4 +1,4 @@
-ZenlabsBeta.Extension = DS.Model.extend({
+ZenlabsBeta.Extension = ZenlabsBeta.Model.extend({
 	name: DS.attr('string'),
 	download_url: DS.attr('string'),
 	short_description: DS.attr('string'),
