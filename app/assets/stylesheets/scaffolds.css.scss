@@ -1,6 +1,6 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #3A3939;
+  color: #fff;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -66,4 +66,8 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+#container, .container{
+  width: 800px;
+  margin: 0 auto;
 }

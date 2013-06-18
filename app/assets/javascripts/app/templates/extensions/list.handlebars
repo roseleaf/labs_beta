@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each extensions}}
+    {{view ZenlabsBeta.ShowExtensionView extensionBinding="this"}}
+  {{/each}}
+  {{#if isNewVisible}}
+    <tr>
+      <td>*</td>
+      <td>
+        {{view ZenlabsBeta.NewExtensionView}}
+      </td>
+    </tr>
+  {{/if}}
+  </tbody>
+</table>
+<div class="commands">
+  <a href="#" {{action "showNew"}}>New App</a>
+  <a href="#" {{action "refreshListing"}}>Refresh Listing</a>
+</div>
