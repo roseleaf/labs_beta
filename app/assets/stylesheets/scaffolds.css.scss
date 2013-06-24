@@ -49,12 +49,14 @@ p, ol, ul, td {
   font-size: 13px;
   line-height: 18px;
 }
+ul {list-style: none; }
 
 pre {
-  background-color: #eee;
-  font-size: 11px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  overflow: auto;
 }
-
 
 div {
   &.field, &.actions {
@@ -93,33 +95,4 @@ div {
     font-size: 12px;
     list-style: square;
   }
-}
-#container, .container{
-  width: 800px;
-  margin: 0 auto;
-}
-#navbar a{color: white;
-  font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;  line-height: 1.5;  
-  text-decoration: none;
-  border-left: 1px solid #92B600;
-  border-left: 1px solid rgba(146, 182, 0, 0.5);
-  border-right: 1px solid #648B00;
-  border-right: 1px solid rgba(100, 139, 0, 0.8);
-  text-transform: uppercase;
-  display: inline-block;
-  text-shadow: 0 1px 4px #253500,1px -1px 6px #4E7000;
-  text-shadow: 0 1px 3px #253500;
-  letter-spacing: 1px;
-  margin: 1px 0 0 0;
-  padding: 0px 16px 0px 33px;
-}
-.whitebox{
-    padding: 10px 30px 20px 30px;
-    margin-left: -25px;
-    margin-bottom: 25px;
-    background: white;
-    border: 1px solid #DDD;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 3px 0px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
 }

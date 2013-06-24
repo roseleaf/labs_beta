@@ -1,12 +1,4 @@
 #header_wrap .inner {
   padding: 15px 10px 20px 10px;
 }
-#top-nav{
-    background: url('http://www.zendesk.com/wp-content/themes/zendesk-twentyeleven/img/navigation/background-normal.jpg');
-height: 39px; 
-width: 100%;
-}
-#navbar{
-  width: 920px; margin: 0 auto; padding-top: 7px; list-style: none;}
-#navbar li{display: inline;
-}
+
