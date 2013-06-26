@@ -1,14 +1,15 @@
-<div class="container-fluid">
+{{view view.sidenavView}}
+<div id="appscontainer" class="container-fluid">
   <div class="row-fluid">
     <div class="span3">
-      <h2>Display Extensions</h2>
-      <ul class="widgetlist">
+      <h2>Extensions</h2>
+      <ul id="widgetlist">
         {{#each model}}
-        <li>
+        <li {{bindAttr class="category :item"}}>
           <span class="appname">{{#linkTo 'extension' this}}{{name}}{{/linkTo}}</span>
         </li>
         {{/each}}
-      </ul>
+      </div>
     </div>
     <div class="span9">
       {{outlet}}
