@@ -1,16 +1,14 @@
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="span3">
-      <table class="table">
-        <thead>
-          <tr><th>Extensions</th></tr>
-        </thead>
+      <h2>Display Extensions</h2>
+      <ul class="widgetlist">
         {{#each model}}
-        <tr><td>
-          {{#linkTo 'extension' this}}{{name}}{{/linkTo}}
-        </td></tr>
+        <li>
+          <span class="appname">{{#linkTo 'extension' this}}{{name}}{{/linkTo}}</span>
+        </li>
         {{/each}}
-      </table>
+      </ul>
     </div>
     <div class="span9">
       {{outlet}}

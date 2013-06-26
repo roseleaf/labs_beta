@@ -1,1 +1,6 @@
-ZenlabsBeta.ExtensionsController = Ember.ArrayController.extend({});
+ZenlabsBeta.ExtensionsController = Ember.ArrayController.extend({
+
+
+
+
+});

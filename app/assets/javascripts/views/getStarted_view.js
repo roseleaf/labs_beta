@@ -1,3 +1,3 @@
-ZenlabsBeta.GetStartedView = Ember.View.extend({
+ZenlabsBeta.GetstartedView = Ember.View.extend({
 
 });

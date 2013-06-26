@@ -16,10 +16,15 @@
 }
 
 #top-nav{
-    background: url('http://www.zendesk.com/wp-content/themes/zendesk-twentyeleven/img/navigation/background-normal.jpg');
+    background: url('/assets/zendesk_developers_bg.png');
 height: 39px; 
 width: 100%;
+filter: progid:dximagetransform.microsoft.gradient(startColorstr='#333333',endColorstr='#222222',GradientType=0);
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
+
 #navbar{
   width: 920px; margin: 0 auto; padding-top: 7px; list-style: none;}
 #navbar li{display: inline;
