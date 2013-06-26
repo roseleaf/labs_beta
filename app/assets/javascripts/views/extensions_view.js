@@ -7,7 +7,7 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 			$container.isotope({
 			  // options
 			  itemSelector : '.item',
-			  layoutMode : 'fitRows'
+			  layoutMode : 'straightDown'
 			});
 			$('#filters a').click(function(){
 			  var selector = $(this).attr('data-filter');

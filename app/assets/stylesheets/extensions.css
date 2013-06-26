@@ -34,3 +34,4 @@ border-bottom: 2px solid #DADADA;
 }
 #appscontainer{float:left; margin-left: 20px;}
 #widgetlist, .isotope{overflow: visible !important;}
+#singleapp{margin-left: 450px; max-width: 495px;}

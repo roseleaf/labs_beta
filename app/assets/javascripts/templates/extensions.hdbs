@@ -1,6 +1,0 @@
-<h1>extensions</h1>
-<ul>
-{{each extensions}}
-	<li>{{name}}}</li>
-{{/each}}
-</ul>

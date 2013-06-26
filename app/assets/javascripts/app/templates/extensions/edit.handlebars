@@ -1,8 +1,0 @@
-{{#with extension}}
-  {{view Ember.TextField valueBinding="name" placeholder="name"}}
-  {{view Ember.TextField valueBinding="name"  placeholder="Last notes"}}
-  <button type="submit">
-    {{#if id}}Update{{else}}Create{{/if}}
-  </button>
-{{/with}}
-<a href="#" {{action "cancelForm"}}>Cancel</a>
