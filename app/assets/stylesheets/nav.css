@@ -3,9 +3,9 @@
   font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;  line-height: 1.5;  
   text-decoration: none;
   border-left: 1px solid #92B600;
-  border-left: 1px solid rgba(146, 182, 0, 0.5);
+/*  border-left: 1px solid rgba(146, 182, 0, 0.5);
   border-right: 1px solid #648B00;
-  border-right: 1px solid rgba(100, 139, 0, 0.8);
+  border-right: 1px solid rgba(100, 139, 0, 0.8);*/
   text-transform: uppercase;
   display: inline-block;
   text-shadow: 0 1px 4px #253500,1px -1px 6px #4E7000;
@@ -14,7 +14,7 @@
   margin: 1px 0 0 0;
   padding: 0px 16px 0px 33px;
 }
-
+#navbar li:nth-child(1) a{border-left: none;}
 #top-nav{
     background: url('/assets/zendesk_developers_bg.png');
 height: 39px; 

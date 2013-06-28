@@ -2,13 +2,14 @@
   padding: 15px 10px 20px 10px;
 }
 #filters{
-list-style: none;
-float: left;
-width: 100px;
-height: 145px;
-border: 1px solid #EEE;
-border-radius: 4px;
-font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 145px;
+	border: 1px solid #EEE;
+	border-radius: 4px;
+	font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #filters li {
 width: 100%;
@@ -33,5 +34,6 @@ border-left-color: rgba(255, 255, 255, 0.7);
 border-bottom: 2px solid #DADADA;
 }
 #appscontainer{float:left; margin-left: 20px;}
+#widgetlist{width: 120px; padding: 0;}
 #widgetlist, .isotope{overflow: visible !important;}
-#singleapp{margin-left: 450px; max-width: 495px;}
+#singleapp{margin-left: 400px; max-width: 495px;}

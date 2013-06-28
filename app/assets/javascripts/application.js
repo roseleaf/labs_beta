@@ -4,7 +4,6 @@
 //= require ember
 //= require ember-data
 //= require_self
-//= require_tree ./lib
 //= require ./vendor/isotope
 //= require_tree ./zpages
 //= require zenlabs_beta
