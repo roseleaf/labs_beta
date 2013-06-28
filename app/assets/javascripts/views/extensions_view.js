@@ -4,11 +4,7 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 		displayFilter: function(){
 		  var $container = $('#widgetlist');
 		  console.log("found container?", $container);
-			$container.isotope({
-			  // options
-			  itemSelector : '.item',
-			  layoutMode : 'straightDown'
-			});
+
 			$('#filters a').click(function(){
 			  var selector = $(this).attr('data-filter');
 			  $container.isotope({ filter: selector }, function( $items ) {
@@ -24,5 +20,13 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 			this.displayFilter();
 
 		}	
-	})
+	}),
+	renderTemplate: function(){
+		this.render();
+		$container.isotope({
+		  // options
+		  itemSelector : '.item',
+		  layoutMode : 'straightDown'
+		});		
+	}
 });

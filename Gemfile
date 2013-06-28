@@ -14,8 +14,6 @@ gem 'jquery-rails'
 
 
 gem 'mysql2'
-# gem 'ember-rails'
-# gem 'jquery-rails'
 
 
 
