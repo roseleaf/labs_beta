@@ -11,13 +11,6 @@ GIT
       handlebars-source
       railties (>= 3.1)
 
-GIT
-  remote: git://github.com/rails-api/active_model_serializers.git
-  revision: 4f185efa90d91a8981498a5f875320ee580d554e
-  specs:
-    active_model_serializers (0.8.1)
-      activemodel (>= 3.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -34,6 +27,8 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
+    active_model_serializers (0.8.1)
+      activemodel (>= 3.0)
     activemodel (3.2.13)
       activesupport (= 3.2.13)
       builder (~> 3.0.0)
@@ -156,7 +151,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_model_serializers!
+  active_model_serializers
   bootstrap-sass (= 2.0.3.1)
   css_parser
   ember-rails!

@@ -3,7 +3,6 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 		templateName: 'sidenav',
 		displayFilter: function(){
 		  var $container = $('#widgetlist');
-		  console.log("found container?", $container);
 
 			$('#filters a').click(function(){
 			  var selector = $(this).attr('data-filter');
@@ -11,7 +10,6 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 				  var len = $items.length;
 				  console.log( 'Isotope has filtered for ' + len + ' items' );
 				});
-			  console.log("yoo?", selector);
 
 			  return false;
 			});

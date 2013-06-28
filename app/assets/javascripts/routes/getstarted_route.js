@@ -1,6 +1,5 @@
 ZenlabsBeta.GetstartedRoute = Ember.Route.extend({
 	events: {
-
 	    selectTab: function(name) {
 	      this.controllerFor('getstarted').set('activeTab', name);
 	      this.render(name, { into: 'getstarted', outlet: 'maintab' });

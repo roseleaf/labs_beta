@@ -4,19 +4,19 @@
 @import url(pygment_trac.css);
 @font-face {
 font-family: "DNLTM";
-src: url("DIN Next [OTF]/DINNextLTPro-Medium.otf");
+src: font-url("DIN Next [OTF]/DINNextLTPro-Medium.otf") format('otf');
 }
 @font-face {
 font-family: "DINNextLTPro-Light";
-src: url("DIN Next [OTF]/DINNextLTPro-Light.otf");
+src: font-url("DIN Next [OTF]/DINNextLTPro-Light.otf" format('otf'));
 }
 @font-face {
 font-family: "DINNextLTPro-Regular";
-src: url("DIN Next [OTF]/DINNextLTPro-Regular.otf");
+src: font-url("DIN Next [OTF]/DINNextLTPro-Regular.otf" format('otf'));
 }
 @font-face {
 font-family: "DINNextRoundedLTPro-Bold";
-src: url("DIN Next Rounded/DINNextRoundedLTPro-Bold.otf");
+src: font-url("DIN Next Rounded/DINNextRoundedLTPro-Bold.otf" format('otf'));
 }
 
 
