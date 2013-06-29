@@ -49,3 +49,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 border-bottom: 3px solid #C4C7BC;
 box-sizing: border-box;
 }
+.explanation h1 {
+color: #434343;
+font-family: 'DINNextLTPro-Light';
+font-weight: 300;
+font-size: 36px;
+}

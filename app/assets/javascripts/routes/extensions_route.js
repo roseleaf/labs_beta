@@ -2,9 +2,11 @@ ZenlabsBeta.ExtensionsRoute = Ember.Route.extend({
 	model: function(){
 		return ZenlabsBeta.Extension.find();
 	},
-	redirect: function() {
-    this.transitionTo('extensions');
-  }
+
+	activate: function(){
+		this.render();
+		this.render('extensionfiller', {into: 'extensions'});
+	}, 
 });
 
 

@@ -1,4 +1,7 @@
-
+#header_wrap .inner {
+  padding: 15px 15px 5px 15px;
+}
+#header_wrap h1{font-size: 48px;}
 #navbar a{color: white;
   font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;  line-height: 1.5;  
   text-decoration: none;

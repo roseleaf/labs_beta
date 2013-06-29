@@ -9,7 +9,7 @@ gem 'handlebars-source', '~> 1.0.0.rc4'
 gem "ember-source", "~> 1.0.0.rc6"
 gem 'active_model_serializers'
 gem 'jquery-rails'
-
+gem 'hamlbars', '~> 2.0'
 
 
 
@@ -26,7 +26,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   # gem 'coffee-rails', '~> 3.2.1'
   gem 'bootstrap-sass', "2.0.3.1"
-  gem 'ember-rails', git: 'git://github.com/emberjs/ember-rails.git'
+  gem 'ember-rails'
   gem 'uglifier', '>= 1.0.3'
 
   gem 'css_parser'

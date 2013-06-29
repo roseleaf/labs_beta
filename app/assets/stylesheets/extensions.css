@@ -1,6 +1,3 @@
-#header_wrap .inner {
-  padding: 15px 10px 20px 10px;
-}
 #filters{
 	padding: 0;
 	list-style: none;
@@ -33,7 +30,14 @@ border-left: 1px solid #FCFCFC;
 border-left-color: rgba(255, 255, 255, 0.7);
 border-bottom: 2px solid #DADADA;
 }
+#filters a.active{border-bottom: 4px solid #80A41A;}
 #appscontainer{float:left; margin-left: 20px;}
 #widgetlist{width: 120px; padding: 0;}
 #widgetlist, .isotope{overflow: visible !important;}
-#singleapp{margin-left: 400px; max-width: 495px;}
+#filterhead{font-family: 'DINNextLTPro-Light'; margin: 20px 0 0 0;}
+#singleapp{margin-left: 400px;
+max-width: 495px;
+border: 1px solid #EEE;
+background: #FFF;
+padding: 10px 25px 20px;
+margin-top: -20px;}

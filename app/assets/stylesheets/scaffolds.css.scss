@@ -3,20 +3,23 @@
 
 @import url(pygment_trac.css);
 @font-face {
-font-family: "DNLTM";
-src: font-url("DIN Next [OTF]/DINNextLTPro-Medium.otf") format('otf');
+  font-family: 'DNLTM';
+  src: url('DINNextLTPro-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DINNextLTPro-Light";
+  src: url("DINNextLTPro-Light.otf");
 }
 @font-face {
-font-family: "DINNextLTPro-Light";
-src: font-url("DIN Next [OTF]/DINNextLTPro-Light.otf" format('otf'));
+  font-family: "DINNextLTPro-Regular"; 
+  src: url("DINNextLTPro-Regular.otf");
 }
 @font-face {
-font-family: "DINNextLTPro-Regular";
-src: font-url("DIN Next [OTF]/DINNextLTPro-Regular.otf" format('otf'));
-}
-@font-face {
-font-family: "DINNextRoundedLTPro-Bold";
-src: font-url("DIN Next Rounded/DINNextRoundedLTPro-Bold.otf" format('otf'));
+  font-family: "DINNextRoundedLTPro-Bold";
+  src: url("DINNextRoundedLTPro-Bold.otf");
 }
 
 
@@ -30,10 +33,9 @@ body {
   background-color: #F0F0F0;
   background-image: url('/assets/bg.png');
   color: #000;
-  font-family: verdana, arial, helvetica, sans-serif;
   line-height: 18px;
   font-size: 16px;
-  font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;  line-height: 1.5;
+  font-family: "DNLTM", "Helvetica Neue",Helvetica,Arial,sans-serif;  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -45,7 +47,6 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 1px 1px 4px white;
 }
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }

@@ -2,9 +2,13 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 	sidenavView: Ember.View.extend({
 		templateName: 'sidenav',
 		displayFilter: function(){
+
 		  var $container = $('#widgetlist');
 
 			$('#filters a').click(function(){
+			  $('.active').removeClass();
+			  $(this).addClass('active');
+
 			  var selector = $(this).attr('data-filter');
 			  $container.isotope({ filter: selector }, function( $items ) {
 				  var len = $items.length;
