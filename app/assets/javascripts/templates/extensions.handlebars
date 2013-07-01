@@ -4,7 +4,7 @@
     <div class="span3">
       <ul id="widgetlist">
         {{#each model}}
-        <li {{bindAttr class="category :item"}}>
+        <li {{bindAttr class="category :item :whitebox :shadow"}}>
           <span class="appname">{{#linkTo 'extension' this}}{{name}}{{/linkTo}}</span>
         </li>
         {{/each}}

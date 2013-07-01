@@ -28,7 +28,7 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 		$container.isotope({
 		  // options
 		  itemSelector : '.item',
-		  layoutMode : 'straightDown'
+		  layoutMode: 'straightDown'
 		});		
 	}
 });

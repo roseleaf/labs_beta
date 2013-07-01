@@ -9,6 +9,7 @@
 	font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #filters li {
+cursor: pointer;
 width: 100%;
 float: left;
 background-color: #EAEAEA;
@@ -31,9 +32,12 @@ border-left-color: rgba(255, 255, 255, 0.7);
 border-bottom: 2px solid #DADADA;
 }
 #filters a.active{border-bottom: 4px solid #80A41A;}
-#appscontainer{float:left; margin-left: 20px;}
-#widgetlist{width: 120px; padding: 0;}
+#appscontainer{float:left; margin-left: 20px; height: 800px;}
+#widgetlist{width: 275px; padding: 0;}
+#widgetlist a, .appname{ height: 100%; width: 100%; display: block;}
+#widgetlist a:visited{color: black;}
 #widgetlist, .isotope{overflow: visible !important;}
+#widgetlist li{ height: 82px; width: 110px;}
 #filterhead{font-family: 'DINNextLTPro-Light'; margin: 20px 0 0 0;}
 #singleapp{margin-left: 400px;
 max-width: 495px;
