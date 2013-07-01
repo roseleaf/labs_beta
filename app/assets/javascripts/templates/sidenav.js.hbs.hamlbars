@@ -1,0 +1,15 @@
+%h2#filterhead
+	Filter Apps by Category
+%ul#filters
+	%li<
+		<a {{action displayFilter target="view"}} data-filter="*" class="active">show all</a>
+	%li<
+		<a {{action displayFilter target="view"}} data-filter=".display"> display</a>
+	%li<
+		<a {{action displayFilter target="view"}} data-filter=".comments">comments</a>
+	%li<
+		<a {{action displayFilter target="view"}} data-filter=".findingData">finding data</a>
+	%li<
+		<a {{action displayFilter target="view"}} data-filter="ticketCreation">ticket creation</a>
+	%li<
+		<a {{action displayFilter target="view"}} data-filter="endUser">end user</a>

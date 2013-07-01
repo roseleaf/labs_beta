@@ -28,6 +28,7 @@ group :assets do
   gem 'bootstrap-sass', "2.0.3.1"
   gem 'ember-rails'
   gem 'uglifier', '>= 1.0.3'
+  gem 'hamlbars', '~> 2.0'
 
   gem 'css_parser'
   gem 'uglifier', '>= 1.0.3'
