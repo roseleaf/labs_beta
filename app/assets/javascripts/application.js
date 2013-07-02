@@ -1,5 +1,4 @@
 //= require handlebars
-
 //= require ./lib/jquery-1.8
 //= require jquery_ujs
 //= require ember

@@ -25,7 +25,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   # gem 'coffee-rails', '~> 3.2.1'
   gem 'handlebars-source', '~> 1.0.0.rc4'
-  gem 'handlebars_assets'
+#  gem 'handlebars_assets'
   gem 'bootstrap-sass', "2.0.3.1"
   gem 'ember-rails'
   gem 'uglifier', '>= 1.0.3'
