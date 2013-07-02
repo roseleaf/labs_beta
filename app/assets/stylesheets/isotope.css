@@ -8,12 +8,12 @@
           transition-duration: 0.8s;
 }
 
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
+.isotope .isotope-item {
+  -webkit-transition-property: height, width, background;
+     -moz-transition-property: height, width, background;
+      -ms-transition-property: height, width, background;
+       -o-transition-property: height, width, background;
+          transition-property: height, width, background;
 }
 
 .isotope .isotope-item {

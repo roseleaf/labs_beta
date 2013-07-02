@@ -34,10 +34,20 @@ border-bottom: 2px solid #DADADA;
 #filters a.active{border-bottom: 4px solid #80A41A;}
 #appscontainer{float:left; margin-left: 20px; height: 800px;}
 #widgetlist{width: 275px; padding: 0;}
-#widgetlist a, .appname{ height: 100%; width: 100%; display: block;}
+#widgetlist a, .appname{ height: 100%; width: 100%; display: block;
+}
 #widgetlist a:visited{color: black;}
 #widgetlist, .isotope{overflow: visible !important;}
-#widgetlist li{ height: 82px; width: 110px;}
+#widgetlist li{ 
+	height: 82px; 
+	width: 110px; 
+	text-align: center; 
+	padding: 10px 15px 10px 15px !important;
+/*	transition: background 1s;
+	-webkit-transition: background 1s; /* Safari */*/
+
+}
+.item:hover{ background: #ddd; }
 #filterhead{font-family: 'DINNextLTPro-Light'; margin: 20px 0 0 0;}
 #singleapp{margin-left: 400px;
 max-width: 495px;

@@ -10,6 +10,6 @@
 	%li<
 		<a {{action displayFilter target="view"}} data-filter=".findingData">finding data</a>
 	%li<
-		<a {{action displayFilter target="view"}} data-filter="ticketCreation">ticket creation</a>
+		<a {{action displayFilter target="view"}} data-filter=".ticketCreation">ticket creation</a>
 	%li<
-		<a {{action displayFilter target="view"}} data-filter="endUser">end user</a>
+		<a {{action displayFilter target="view"}} data-filter=".endUser">end user</a>
