@@ -10,6 +10,7 @@ gem "ember-source", "~> 1.0.0.rc6"
 gem 'active_model_serializers'
 gem 'jquery-rails'
 gem 'hamlbars', '~> 2.0'
+gem 'thin'  
 
 
 
@@ -47,7 +48,6 @@ end
 
 group :development, :test do  
     gem "jasminerice"
-    gem 'thin'  
 end  
 
 # To use ActiveModel has_secure_password

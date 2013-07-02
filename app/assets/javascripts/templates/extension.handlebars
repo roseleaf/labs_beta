@@ -1,10 +1,13 @@
 <div class="name">
   <h1>{{name}} <small class="muted">by {{author_type}}</small></h1>
 </div>
-
-<div class="description">
-  <p>Description: {{short_description}}</p>
-  <p>Notes: {{markdown notes}}</p>
-  <p>Category: {{category}}</p>
-  <p>Download Link: {{download_url}}</p>
+<div id="singleapp">
+	<div class="description">
+	  <p class="shortDescript">{{short_description}}</p>
+	  <p><span class="bold">Category:</span> {{category}}</p>
+	  <p><span class="bold">Notes:</span> {{markdown notes}}</p>
+	  <p class="downloadButton">
+	  	<a {{bindAttr href="download_url"}} class="bottom-right-link">Download</a>
+	  </p>
+	</div>
 </div>

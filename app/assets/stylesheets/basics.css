@@ -6,10 +6,10 @@ margin: 0 0 -14px -20px;
   text-align: center; 
   display:inline-block; 
   width: 32%; 
-  height: 40px; 
+  height: 37px; 
   border-top-left-radius: 8px; 
   border-top-right-radius: 8px;
-  padding-top: 15px;
+  padding-top: 19px;
 
   text-shadow: 1px 1px 4px white;
   font-weight: bolder;
@@ -44,6 +44,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   width: 100%;
   height: 100%;
   display: block;
+  font-family: "DNLTM", "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #directionsType li.active a{
 border-bottom: 3px solid #C4C7BC;
