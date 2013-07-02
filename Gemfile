@@ -5,11 +5,9 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'handlebars-source', '~> 1.0.0.rc4'
 gem "ember-source", "~> 1.0.0.rc6"
 gem 'active_model_serializers'
 gem 'jquery-rails'
-gem 'hamlbars', '~> 2.0'
 gem 'thin'  
 
 
@@ -26,6 +24,8 @@ gem 'mysql2'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   # gem 'coffee-rails', '~> 3.2.1'
+  gem 'handlebars-source', '~> 1.0.0.rc4'
+  gem 'handlebars_assets'
   gem 'bootstrap-sass', "2.0.3.1"
   gem 'ember-rails'
   gem 'uglifier', '>= 1.0.3'
