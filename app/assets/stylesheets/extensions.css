@@ -55,3 +55,7 @@ border: 1px solid #EEE;
 background: #FFF;
 padding: 10px 25px 20px;
 margin-top: -20px;}
+small.muted{
+	font-weight: lighter;
+	color: black;
+}
