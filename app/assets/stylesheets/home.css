@@ -41,7 +41,7 @@
   padding: 20px 10px;
   margin: 0 auto;
 }
-.content, .container{height: auto, float: none;}
+.content, .container{height: auto; float: none;}
 .headerpic{ border-radius: 3px; width: 100%;}
 
 .top-five{list-style: none; float: none; text-align: center; margin: 40px auto; width: 760px;}
@@ -111,7 +111,8 @@ display: none;
   padding: 5px 10px 5px;
   cursor: pointer;
 }
-.bottom-right-link:hover{-webkit-gradient(linear,left top,left bottom,from(#ffc154),to(#e47601));
+.bottom-right-link:hover{
+  background: -webkit-gradient(linear,left top,left bottom,from(#ffc154),to(#e47601));
   background:-moz-linear-gradient(top,#ffc154,#e47601);
   box-shadow:inset 0px 0px 0px 0px #e08805;
   color:#fff
