@@ -62,6 +62,9 @@ ZenlabsBeta::Application.configure do
   config.active_support.deprecation = :notify
   config.ember.variant = :production
 
+  config.ember.variant = :production
+
+
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5

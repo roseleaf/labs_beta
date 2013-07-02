@@ -44,8 +44,6 @@ border-bottom: 2px solid #DADADA;
 	width: 110px; 
 	text-align: center; 
 	padding: 10px 15px 10px 15px !important;
-/*	transition: background 1s;
-	-webkit-transition: background 1s; /* Safari */
 
 }
 .item:hover{ background: #ddd; }
