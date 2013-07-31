@@ -10,7 +10,7 @@ gem "ember-source", "~> 1.0.0.rc6"
 gem 'active_model_serializers'
 gem 'jquery-rails'
 gem 'thin'  
-gem 'ember-rails'
+gem 'ember-rails', :git => 'git://github.com/emberjs/ember-rails.git'
 
 
 
@@ -18,9 +18,6 @@ gem 'mysql2'
 
 
 
-
-
-# gem 'sprockets-commonjs'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -45,6 +42,11 @@ end
 
 group :development do
 	gem 'quiet_assets'
+  gem 'rspec-rails'
+  gem 'rb-fsevent'
+  gem 'guard-rspec'    
+  gem 'rspec_api_test'
+
 end
 
 group :development, :test do  
@@ -54,14 +56,3 @@ end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'

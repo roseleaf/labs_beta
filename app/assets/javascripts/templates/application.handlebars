@@ -1,26 +1,25 @@
-<div id="header_wrap" class="outer">
-  <header class="inner">
-    {{#linkTo 'index'}}<h1 id="project_title">ZENLABS<span style="display:inline-block; font-size:14px; text-shadow:none; margin-left: 4px;">Beta</span></h1>{{/linkTo}}
-  </header>
+</div>
+<div id="main" class="container">
   <div id="top-nav">
     <ul id="navbar">
       <li>
-        {{#linkTo 'index'}}Home{{/linkTo}}
+        {{#linkTo 'index'}}Labs Home{{/linkTo}}
       </li>
       <li>
         {{#linkTo 'getstarted'}}Getting Started{{/linkTo}}
+        {{outlet startNav}}
       </li>
       <li>
         {{#linkTo 'extensions'}}App Directory{{/linkTo}}
+        {{outlet sideFilter}}
       </li>
-      <li>
-        <a href="http://developer.zendesk.com/" target= "_blank">Developer Site</a>
-      </li>
+
     </ul>
   </div>
-</div>
-<div id="main" class="container">
+
   <div class="content">
     {{outlet}}
   </div>
 </div>
+<footer>
+</footer>

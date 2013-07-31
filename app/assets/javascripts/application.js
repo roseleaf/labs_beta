@@ -9,7 +9,7 @@
 //= require_self
 //= require zenlabs_beta
 
-Ember.ENV.EXPERIMENTAL_CONTROL_HELPER = true
+Ember.ENV.EXPERIMENTAL_CONTROL_HELPER = true;
 ZenlabsBeta = Ember.Application.create();
 
 

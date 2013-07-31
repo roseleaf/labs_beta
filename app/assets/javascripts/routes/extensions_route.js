@@ -4,9 +4,10 @@ ZenlabsBeta.ExtensionsRoute = Ember.Route.extend({
 	},
 
 	activate: function(){
+		this.render('sidenav', {into: 'application', outlet: 'sideFilter'});		
 		this.render();
 		this.render('extensionfiller', {into: 'extensions'});
-	}, 
+	}
 });
 
 

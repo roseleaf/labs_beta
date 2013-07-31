@@ -1,13 +1,7 @@
 <!-- MAIN CONTENT -->
 <div id="main_content_wrap" class="outer">
   <section id="main_content" class="inner">
-    <div id="basicsnav">
-      <ul id="directionsType">
-        <li class="shadow"><a data-tab="privateapps" {{action selectTab "privateapps"}}>New Zendesk Private</a></li>
-        <li class="shadow"><a data-tab="publicapps" {{action selectTab "publicapps"}}>New Zendesk Public</a></li>
-        <li class="shadow"><a data-tab="classicapps" {{action selectTab "classicapps"}}>Classic & Portal</a></li>
-      </ul>
-    </div>
+
     <div class="whitebox shadow explanation">
       {{outlet maintab}}
     </div>

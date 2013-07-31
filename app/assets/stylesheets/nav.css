@@ -1,27 +1,21 @@
+/*#header_wrap.outer {background-color: #fff;}
+*/
 #header_wrap .inner {
   padding: 15px 15px 5px 15px;
 }
 #header_wrap h1{font-size: 48px;}
-#navbar a{color: white;
+#navbar a{
+  color: #777;
   font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;  line-height: 1.5;  
+  font-weight: bold;
   text-decoration: none;
-  border-left: 1px solid #92B600;
-/*  border-left: 1px solid rgba(146, 182, 0, 0.5);
-  border-right: 1px solid #648B00;
-  border-right: 1px solid rgba(100, 139, 0, 0.8);*/
-  text-transform: uppercase;
   display: inline-block;
-  text-shadow: 0 1px 4px #253500,1px -1px 6px #4E7000;
-  text-shadow: 0 1px 3px #253500;
   letter-spacing: 1px;
   margin: 1px 0 0 0;
-  padding: 0px 16px 0px 33px;
 }
 #navbar li:nth-child(1) a{border-left: none;}
 #top-nav{
-    background: url('/assets/zendesk_developers_bg.png');
-height: 39px; 
-width: 100%;
+width: 23%;
 filter: progid:dximagetransform.microsoft.gradient(startColorstr='#333333',endColorstr='#222222',GradientType=0);
 -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);
@@ -29,6 +23,22 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 #navbar{
-  width: 920px; margin: 0 auto; padding-top: 7px; list-style: none;}
-#navbar li{display: inline;
+width: 100%;
+margin: 0;
+list-style: none;
+float: left;
+padding-left: 0;
 }
+#navbar > li{
+ border-right: 1px solid rgba(0, 0, 0, 0.1);
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ padding: 7px 15px; 
+}
+#navbar > li > ul > li {
+  font-size: 12px;
+  list-style: none;
+  line-height: 15px;
+  padding-bottom: 10px;
+}
+#navbar > li > ul > li a{color: #08c;}
+#navbar > li > ul > li a:hover {text-decoration: underline; cursor: pointer;}

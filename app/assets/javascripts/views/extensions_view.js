@@ -1,34 +1,25 @@
 ZenlabsBeta.ExtensionsView = Ember.View.extend({
-	sidenavView: Ember.View.extend({
-		templateName: 'sidenav',
-		displayFilter: function(){
 
-		  var $container = $('#widgetlist');
+	didInsertElement: function(){
+		this.displayFilter();
+		console.log("dis insert")
+	},
 
-			$('#filters a').click(function(){
-			  $('.active').removeClass();
-			  $(this).addClass('active');
+	displayFilter: function(){
+		var $container = $('#widgetlist');
+		console.log("trying", $('#filters'));
 
-			  var selector = $(this).attr('data-filter');
-			  $container.isotope({ filter: selector }, function( $items ) {
-				  var len = $items.length;
-				  console.log( 'Isotope has filtered for ' + len + ' items' );
-				});
+		$('#filters a').click(function(){
+		  $('.active').removeClass();
+		  $(this).addClass('active');
 
-			  return false;
+		  var selector = $(this).attr('data-filter');
+		  $container.isotope({ filter: selector, layoutMode: 'straightAcross' }, function( $items ) {
+			  var len = $items.length;
+			  console.log( 'Isotope has filtered for ' + len + ' items' );
 			});
-		},
-		didInsertElement: function(){
-			this.displayFilter();
 
-		}	
-	}),
-	renderTemplate: function(){
-		this.render();
-		$container.isotope({
-		  // options
-		  itemSelector : '.item',
-		  layoutMode: 'straightDown'
-		});		
+		  return false;
+		});
 	}
 });
