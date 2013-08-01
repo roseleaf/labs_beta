@@ -1,0 +1,13 @@
+You have new mail in /var/mail/ktrujillo
+export PATH ; PATH="/Users/ktrujillo/.rvm/gems/ruby-1.9.3-p374/bin:/Users/ktrujillo/.rvm/gems/ruby-1.9.3-p374@global/bin:/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/bin:/Users/ktrujillo/.rvm/bin:$PATH"
+export rvm_env_string ; rvm_env_string='ruby-1.9.3-p374'
+export rvm_path ; rvm_path='/Users/ktrujillo/.rvm'
+export rvm_ruby_string ; rvm_ruby_string='ruby-1.9.3-p374'
+unset rvm_gemset_name
+export RUBY_VERSION ; RUBY_VERSION='ruby-1.9.3-p374'
+export GEM_HOME ; GEM_HOME='/Users/ktrujillo/.rvm/gems/ruby-1.9.3-p374'
+export GEM_PATH ; GEM_PATH='/Users/ktrujillo/.rvm/gems/ruby-1.9.3-p374:/Users/ktrujillo/.rvm/gems/ruby-1.9.3-p374@global'
+export MY_RUBY_HOME ; MY_RUBY_HOME='/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374'
+export IRBRC ; IRBRC='/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/.irbrc'
+unset MAGLEV_HOME
+unset RBXOPT

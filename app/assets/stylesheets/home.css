@@ -1,5 +1,5 @@
 #main{
-  width: 962px;
+  width: 920px;
   margin: 10px auto;
   background: #FFF;
   border: 1px solid #DDD;
@@ -8,7 +8,7 @@
   border-radius: 5px;
 }
 #main_content {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .shadow{
 /*  border-radius: 5px;
@@ -31,6 +31,7 @@
     -webkit-border-radius: 5px;
     border-radius: 5px;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     width: 100%;
 }
 
@@ -46,10 +47,10 @@
   padding: 20px 10px;
   margin: 0 auto;
 }
-.container{ float: none; min-height: 900px; height: 100%;}
-.content{ width: 77%; float: left; min-height: 100%;}
+.container{ float: none; height: 100%;}
+.content{ width: 77%; margin-left: 212px; min-height: 100%;}
 .content:after{clear: both;}
-.headerpic{ border-top-right-radius: 3px; width: 100%;}
+.headerpic{ border-top-right-radius: 3px; width: 100%; padding-left: 1px;}
 
 .whitebox h2, .whitebox h1{
   text-transform: uppercase;
@@ -118,11 +119,13 @@ footer{
 #intro{
   padding-right: 35px;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 #browse-button{
   font-size: 65px;
   padding-top: 30px;
   font-family: 'DINNextLTPro-Light';
+  margin-bottom: 40px;
 }
 #browse-button a:visited, #browse-button a{
   color: black;

@@ -1,15 +1,31 @@
-<div id="appscontainer" class="container-fluid">
-  <div class="row-fluid">
-    <div class="listspan">
-      <ul id="widgetlist">
-        {{#each model}}
-        <li {{bindAttr class="category :item :whitebox :shadow"}}>
-          <span class="appname">{{#linkTo 'extension' this}}{{name}}{{/linkTo}}</span>
-        </li>
-        {{/each}}
-      </div>
-    </div>
+<section id="main_content" class="inner">
+  <div class="whitebox">
+    <div id="appscontainer" class="explanation">
+      <h1>All Apps + Extensions</h1>
+      
+      <div id="listarea">
+        <div class="leftarrow"><span>first</span></div>
+        <div class="listmask">
+          <div class="listspan">
+            <ul id="widgetlist">
+              {{#each model}}
+              <li {{bindAttr class="category :item :whitebox :shadow"}}>
+                <span class="appname">{{#linkTo 'extension' this}}{{name}}{{/linkTo}}</span>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
 
+        <div class="rightarrow"><span>last</span></div>
+        <div class="controls">
+          <div class="lineview"></div>
+          <div class="gridview"></div>
+        </div>
+
+      </div>
+
+    </div>  
+    {{outlet}}
   </div>
-  {{outlet}}
-</div>  
+</div>

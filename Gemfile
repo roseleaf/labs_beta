@@ -15,6 +15,8 @@ gem 'ember-rails', :git => 'git://github.com/emberjs/ember-rails.git'
 
 
 gem 'mysql2'
+gem 'carrierwave'
+gem 'fog', '~> 1.0.0' # Need to specify version, as carrierwave references older (0.9.0)
 
 
 
@@ -42,10 +44,9 @@ end
 
 group :development do
 	gem 'quiet_assets'
-  gem 'rspec-rails'
-  gem 'rb-fsevent'
-  gem 'guard-rspec'    
-  gem 'rspec_api_test'
+  # gem 'rspec-rails'
+  # gem 'rb-fsevent'
+  # gem 'guard-rspec'    
 
 end
 

@@ -30,12 +30,12 @@ border-right-color: rgba(0, 0, 0, 0.04);
 border-left: 1px solid #FCFCFC;
 border-left-color: rgba(255, 255, 255, 0.7);
 border-bottom: 2px solid #DADADA;
-}
-#filters a.active{border-bottom: 4px solid #80A41A;}*/
+}*/
+#filters small{ font-weight: lighter; text-transform: uppercase; color: #999;}
 #appscontainer{float:left; margin-left: 20px; height: auto;}
+#appscontainer h1, .name h1{ text-transform: none !important;}
 #widgetlist{
 	height: 95px; 
-	width: 1400px;
 	padding: 0; padding-bottom: 30px;
 	overflow-x: scroll;
 	overflow-y: hidden;
@@ -45,8 +45,9 @@ border-bottom: 2px solid #DADADA;
 #widgetlist a:visited{color: black;}
 /*#widgetlist, .isotope{overflow: visible !important;}
 */
-
-.listspan{height: 120px; width: 600px; overflow-x: scroll; overflow-y: hidden;}
+.listmask{ overflow: hidden; height: 102px;}
+.listmask, .listspan{ width: 500px; margin: 0 3px 0 3px; float: left; }
+.listspan{ height: 120px; overflow-x: scroll; overflow-y: hidden;}
 #widgetlist li{ 
 	margin: 0 5px 10px 5px;
 	height: 82px; 
@@ -55,6 +56,7 @@ border-bottom: 2px solid #DADADA;
 	padding: 10px 15px 10px 15px !important;
 	float: left;
 	display: inline;
+	position: relative;
 }
 .item:hover{ background: #ddd; }
 #filterhead{font-family: 'DINNextLTPro-Light'; margin: 15px 0 0 633px; width: 92px; height: 50px; text-align: right;}
@@ -69,7 +71,7 @@ small.muted{
 	font-weight: lighter;
 	color: black;
 }
-.name{margin-top: -5px; margin-left: 25px; width: 100%; float: left;}
+.name{margin-top: 30px; margin-left: 25px; width: 100%; float: left;}
 .name h1{ font-family: "DINNextLTPro-Light";}
 .shortDescript{ 
 	padding-bottom: 22px;
@@ -79,3 +81,61 @@ small.muted{
 	font-weight: lighter;
 }
 .downloadButton{ margin-bottom: 40px;}
+.leftarrow{
+float: left;
+width: 42px;
+height: 42px;
+background: url('/assets/arrows.png');
+margin-left: -40px;
+}
+.rightarrow{
+position: absolute;
+width: 42px;
+height: 42px;
+background: url('/assets/arrows.png');
+background-position: -44px 0;
+margin-left: 570px;
+}
+.leftarrow:hover{ background-position: 0 40px; }
+.rightarrow:hover{ background-position: -44px 40px; }
+.leftarrow, .rightarrow{
+	margin-top: 30px; 
+	text-align: center;   
+	cursor: pointer;
+	transition: visibility 0.5s ease-in-out;
+	-moz-transition: visibility 0.5s ease-in-out;
+	-o-transition: visibility 0.5s ease-in-out;
+	-webkit-transition: visibility 0.5s ease-in-out;
+}
+.leftarrow span, .rightarrow span{
+margin-top: -20px;
+display: block;
+font-family: 'helvetica neue';
+font-size: 10px;
+text-transform: uppercase;
+color: #999;
+margin-left: 1px;
+}
+.lineview {
+background: url('/assets/arrows.png');
+width: 32px;
+height: 23px;
+background-position: 50px 0;
+float: left;
+
+}
+.gridview {
+background: url('/assets/arrows.png');
+width: 30px;
+height: 25px;
+background-position: 50px 50px;
+float: left;
+margin-top: 4px;
+}
+.controls {
+width: 136px;
+height: 35px;
+float: left;
+cursor: pointer;
+margin-left: 12px;
+}
