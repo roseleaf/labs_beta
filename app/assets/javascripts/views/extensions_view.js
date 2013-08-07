@@ -2,6 +2,7 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 	didInsertElement: function(){
 		this.displayFilter();
 		this.setGallery();
+		this.setBinds();
 	},
 
 	displayFilter: function(){
@@ -29,27 +30,40 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 		});
 	}.observes('controller.model'),
 	setGallery: function(){
-		console.log("when!", $('.item'));
 		var listwidth = $(".item:first").outerWidth(true) * $('.item').length,
 			itemwidth = $(".item:first").outerWidth(true),
 			isMouseDown = false,
 			maxleft = listwidth - (itemwidth *3.4);
 		$("#widgetlist").width(listwidth);
 		$(".leftarrow").click(function(){
-			$('.listspan').animate({scrollLeft: 0}, 800);
-		});
-		$(".rightarrow").mousedown(function(){
 			var min = $('.listspan').scrollLeft();
-			while (min < maxleft ){
-				$('.listspan').animate({scrollLeft: min}, 100);
-				min += 45;
+			if (min > 0) {
+				$('.listspan').animate({scrollLeft: 0}, 800);
 			};
-		})
-		.mouseup(function(){
-			$('.listspan').stop(true);
+		});
+		$(".rightarrow").click(function(){
+			var min = $('.listspan').scrollLeft();
+			if (min < maxleft ){
+				$('.listspan').animate({scrollLeft: min + itemwidth *3.4}, 800);
+			};
 		})
 		.dblclick(function(){
 			$('.listspan').animate({scrollLeft: maxleft}, 800);
 		});
-	}.observes('controller.model')
+	},
+	setBinds: function(){
+		$(document).keydown(function(e){
+			if (e.keyCode == 37) { 
+				console.log( "left pressed" );
+				$('#widgetlist').stop(true);		       
+			  	$('.leftarrow').click();
+				return false;
+			} else if (e.keyCode == 39) {
+				console.log("right pressed");
+				$('#widgetlist').stop(true);		       		    	
+				$('.rightarrow').click();
+				return false;
+			};
+			});
+	}
 });
