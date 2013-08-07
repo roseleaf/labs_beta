@@ -28,12 +28,13 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 			});
 			return false;
 		});
-	}.observes('controller.model'),
+	}.observes('controller.recordsLoaded'),
 	setGallery: function(){
 		var listwidth = $(".item:first").outerWidth(true) * $('.item').length,
 			itemwidth = $(".item:first").outerWidth(true),
 			isMouseDown = false,
 			maxleft = listwidth - (itemwidth *3.4);
+
 		$("#widgetlist").width(listwidth);
 		$(".leftarrow").click(function(){
 			var min = $('.listspan').scrollLeft();
@@ -50,7 +51,7 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 		.dblclick(function(){
 			$('.listspan').animate({scrollLeft: maxleft}, 800);
 		});
-	},
+	}.observes('recordsLoaded'),
 	setBinds: function(){
 		$(document).keydown(function(e){
 			if (e.keyCode == 37) { 
