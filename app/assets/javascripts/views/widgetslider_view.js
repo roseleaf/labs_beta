@@ -27,7 +27,7 @@ ZenlabsBeta.WidgetsliderView = Ember.View.extend({
 		.dblclick(function(){
 			$('.listspan').animate({scrollLeft: maxleft}, 800);
 		});
-		if ($('.item').length == 0 ) {
+		if ($('.item').length <= 1 ) {
 			$('#sliderlist').hide();
 		} else {
 			$('#sliderlist').show();

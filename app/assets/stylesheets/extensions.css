@@ -131,6 +131,7 @@ width: 600px;
 height: 100%;
 min-height: 100px;
 margin-left: -55px;
+overflow: visible !important;
 }
 #sliderlist{
 width: 900px;

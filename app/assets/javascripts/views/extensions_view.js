@@ -14,7 +14,6 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 			var selector = $(this).attr('data-filter');
 			$container.isotope({ filter: selector, layoutMode: 'fitRows' }, function( $items ) {
 				var len = $items.length;
-				console.log("isotoping", len);
 				if ( len < 5 ){
 					$('.leftarrow, .rightarrow, .controls').css('visibility', 'hidden');
 				} else{
