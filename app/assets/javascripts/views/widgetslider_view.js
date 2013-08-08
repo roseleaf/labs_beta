@@ -3,7 +3,7 @@ ZenlabsBeta.WidgetsliderView = Ember.View.extend({
 	controller: ZenlabsBeta.ExtensionsController,
 	didInsertElement: function(){
 		this.setGallery();
-		this.setBinds();
+		// this.setBinds();
 	},	
 	setGallery: function(){
 		console.log("setGallery");
@@ -11,10 +11,9 @@ ZenlabsBeta.WidgetsliderView = Ember.View.extend({
 			itemwidth = $(".item:first").outerWidth(true),
 			isMouseDown = false,
 			maxleft = listwidth - (itemwidth *3.4);
-
+		$('.leftarrow, .rightarrow').unbind('click');
 		$("#widgetlist").width(listwidth);
 		$(".leftarrow").click(function(){
-			console.log( "left pressed" );			
 			var min = $('.listspan').scrollLeft();
 			if (min > 0) {
 				$('.listspan').animate({scrollLeft: 0}, 800);

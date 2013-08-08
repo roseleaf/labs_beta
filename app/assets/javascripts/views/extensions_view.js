@@ -7,7 +7,6 @@ ZenlabsBeta.ExtensionsView = Ember.View.extend({
 		var view = this;
 		var $container = $('#widgetgrid'),
 			$item = $('.item');
-		// $('#widgetlist').width(1320);
 		$('#filters a').click(function(){
 			$('.active').removeClass();
 			$(this).addClass('active');
