@@ -8,7 +8,7 @@
   display: none;
 }
 #main{
-  width: 920px;
+  width: 940px;
   margin: 10px auto;
   background: #FFF;
   border: 1px solid #DDD;
@@ -57,7 +57,7 @@
   margin: 0 auto;
 }
 .container{ float: none; height: 100%;}
-.content{ width: 77%; margin-left: 212px; min-height: 100%;}
+.content{ width: 77%; margin-left: 217px; min-height: 100%;}
 .content:after{clear: both;}
 .headerpic{ border-top-right-radius: 3px; width: 100%; padding-left: 1px;}
 
