@@ -56,5 +56,11 @@ class Extension < ActiveRecord::Base
 		end
 #		contents = readme_link
 	end
+	def icon_url
+		self.icon.url
+	end
+	def icon_thumb
+		self.icon.thumb.url
+	end
 
 end

@@ -3,7 +3,7 @@ CarrierWave.configure do |config|
     :provider               => 'AWS',                        # required
     :aws_access_key_id      => CONFIG['access_key_id'],                        # required
     :aws_secret_access_key  => CONFIG['secret_access_key'],                        # required
-    :region                 => 'eu-west-1',                  # optional, defaults to 'us-east-1'
+    :region                 => 'es-west-1',                  # optional, defaults to 'us-east-1'
   }
   config.fog_directory  = CONFIG['bucket_name']                     # required
   config.fog_public     = false                                   # optional, defaults to true

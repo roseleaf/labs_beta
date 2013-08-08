@@ -16,7 +16,8 @@ gem 'ember-rails', :git => 'git://github.com/emberjs/ember-rails.git'
 
 gem 'mysql2'
 gem 'carrierwave'
-gem 'fog', '~> 1.0.0' # Need to specify version, as carrierwave references older (0.9.0)
+gem 'fog', '~> 1.3.1' # Need to specify version, as carrierwave references older (0.9.0)
+gem 'rmagick'
 
 
 

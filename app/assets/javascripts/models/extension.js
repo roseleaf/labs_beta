@@ -5,5 +5,7 @@ ZenlabsBeta.Extension = ZenlabsBeta.Model.extend({
 	notes: DS.attr('string'),
 	category: DS.attr('string'),
 	author_type: DS.attr('string'),
-	zip_url: DS.attr('string')
+	zip_url: DS.attr('string'),
+	icon_url: DS.attr('string'),
+	icon_thumb: DS.attr('string')
 });

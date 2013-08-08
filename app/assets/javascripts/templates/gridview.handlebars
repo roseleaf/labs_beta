@@ -2,7 +2,10 @@
   <ul id="widgetgrid">
   	{{#each model}}
 		<li {{bindAttr class="category :item :whitebox :shadow"}}>
-		<span class="appname">{{#linkTo 'extension' this}}{{name}}{{/linkTo}}</span>
+			{{#linkTo 'extension' this}}
+				<img {{bindAttr src="icon_url"}}/>
+				<span class="appname">{{name}}</span>
+			{{/linkTo}}
 		</li>  		
   	{{/each}}
   </ul>
