@@ -1,15 +1,25 @@
 class Extension < ActiveRecord::Base
-  attr_accessible :name, :download_url, :short_description, :notes, :category, :interface, :author_type, :readme, :download_zip_url
+  attr_accessible :name, :download_url, :short_description, :notes, :category, :interface, :author_type, :readme, :download_zip_url, :icon
+  mount_uploader :icon, IconUploader
+
   require 'open-uri'
-  	# I foresee this method getting bigger later:
+
+  	# this method may get more specific later:
 	def stripped_url
 		if self.download_url[(self.download_url.length) -1] == "/"
 			self.download_url.chop!
 		end	
-		return self.download_url
+		base_link = self.download_url[self.download_url.index("github"), (self.download_url.length) -1]
+		if base_link.include? "/master"
+			base_link = base_link[0, base_link.index("/master")]			
+		end	
+		if base_link.include? "/archive"
+			base_link = base_link[0, base_link.index("/archive")]			
+		end
+		return base_link
 	end
 	def download_zip_url	
-		url = stripped_url
+		url = "https://" + stripped_url
 		if self.interface == 'classic'
 			return url
 		else
@@ -28,10 +38,7 @@ class Extension < ActiveRecord::Base
 	def fetch_readme
 		url = stripped_url
 		contents = ""
-		base_link = url[url.index("github"), (url.length) -1]
-		if base_link.include? "/master"
-			base_link = base_link[0, base_link.index("/master")]			
-		end
+
 		readme_link = "https://raw." + base_link + "/master/README.md"
 		puts "readme_link: #{readme_link}"
 

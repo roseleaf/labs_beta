@@ -1,0 +1,10 @@
+base: &base
+  secret_access_key: "7JMgPQVLxInDvCHf0QZCRbgxBGNT7kjBl+mCunux"
+  access_key_id: "AKIAID3ZK2N2NUNIHBTQ"
+  region: 's3-eu-west-1.amazonaws.com'
+development:
+  <<: *base
+  bucket_name: zenlabtest
+production:
+  <<: *base
+  bucket_name: zenlab

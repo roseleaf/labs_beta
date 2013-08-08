@@ -6,7 +6,6 @@ ZenlabsBeta.WidgetsliderView = Ember.View.extend({
 		// this.setBinds();
 	},	
 	setGallery: function(){
-		console.log("setGallery");
 		var listwidth = $(".item:first").outerWidth(true) * $('.item').length,
 			itemwidth = $(".item:first").outerWidth(true),
 			isMouseDown = false,
@@ -38,12 +37,10 @@ ZenlabsBeta.WidgetsliderView = Ember.View.extend({
 		console.log('setBinds');
 		$(document).keydown(function(e){
 			if (e.keyCode == 37) { 
-				console.log('left pressed');
 				$('#widgetlist').stop(true);		       
 			  	$('.leftarrow').click();
 				return false;
 			} else if (e.keyCode == 39) {
-				console.log("right pressed");
 				$('#widgetlist').stop(true);		       		    	
 				$('.rightarrow').click();
 				return false;
