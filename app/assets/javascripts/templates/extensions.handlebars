@@ -1,31 +1,15 @@
 <section id="main_content" class="inner">
-  <div class="whitebox">
     <div id="appscontainer" class="explanation">
       <h1>All Apps + Extensions</h1>
-      
       <div id="listarea">
-        <div class="leftarrow"><span>prev</span></div>
-        <div class="listmask">
-          <div class="listspan">
-            <ul id="widgetlist">
-              {{#each model}}
-              <li {{bindAttr class="category :item :whitebox :shadow"}}>
-                <span class="appname">{{#linkTo 'extension' this}}{{name}}{{/linkTo}}</span>
-              </li>
-              {{/each}}
-            </ul>
-          </div>
-        </div>
-
-        <div class="rightarrow"><span>next</span></div>
+        {{ outlet widgetindex }}
         <div class="controls">
-          <div class="lineview"></div>
-          <div class="gridview"></div>
+          <a {{action showSlider}}><div class="lineview"></div></a>
+          <a {{action showGrid}}><div class="gridview"></div></a>
         </div>
 
       </div>
 
     </div>  
     {{outlet}}
-  </div>
-</div>
+</section>

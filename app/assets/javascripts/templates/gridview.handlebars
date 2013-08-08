@@ -1,0 +1,9 @@
+<section id="main_content" class="inner">
+  <ul id="widgetgrid">
+  	{{#each model}}
+		<li {{bindAttr class="category :item :whitebox :shadow"}}>
+		<span class="appname">{{#linkTo 'extension' this}}{{name}}{{/linkTo}}</span>
+		</li>  		
+  	{{/each}}
+  </ul>
+</section>

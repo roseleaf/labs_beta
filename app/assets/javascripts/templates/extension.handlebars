@@ -3,11 +3,12 @@
 </div>
 <div id="singleapp">
 	<div class="description">
-	  <p class="shortDescript">{{short_description}}</p>
-	  <p><span class="bold">Category:</span> {{category}}</p>
-	  <p><span class="bold">Notes:</span> {{markdown notes}}</p>
-	  <p class="downloadButton">
-	  	<a {{bindAttr href="zip_url"}} class="bottom-right-link">Download</a>
-	  </p>
+		<p class="shortDescript">{{short_description}}</p>
+		<p><span class="bold">Category:</span> {{category}}</p>
+		<p><span class="bold">Notes:</span> {{markdown notes}}</p>
+		<p class="downloadButton">
+			<a {{bindAttr href="zip_url"}} class="bottom-right-link">Download</a>
+		</p>
 	</div>
 </div>
+{{outlet slider}}

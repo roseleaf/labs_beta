@@ -1,3 +1,3 @@
-ZenlabsBeta.ExtensionIndexView = Ember.View.extend({
+ZenlabsBeta.ExtensionView = Ember.View.extend({
 
 });

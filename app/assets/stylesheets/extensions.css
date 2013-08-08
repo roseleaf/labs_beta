@@ -1,36 +1,4 @@
-/*#filters{
-	padding: 0;
-	list-style: none;
-	float: right;
-	width: 100px;
-	height: 100%;
-	border: 1px solid #E4E2E2;
-	border-radius: 4px;
-	font-family: "DINNextLTPro-Medium", "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-#filters li {
-cursor: pointer;
-width: 100%;
-float: left;
-background-color: #EAEAEA;
-background-image: -moz-linear-gradient(#FAFAFA, #EAEAEA);
-background-image: -webkit-linear-gradient(#FAFAFA, #EAEAEA);
-background-image: linear-gradient(#FAFAFA, #EAEAEA);
-}
-#filters a {
-display: block;
-text-align: center;
-line-height: 35px;
-font-size: 12px;
-color: #777;
-text-decoration: none;
-text-shadow: 0 1px 0 #FFF;
-border-right: 1px solid #EEE;
-border-right-color: rgba(0, 0, 0, 0.04);
-border-left: 1px solid #FCFCFC;
-border-left-color: rgba(255, 255, 255, 0.7);
-border-bottom: 2px solid #DADADA;
-}*/
+#filters {padding-left: 0;}
 #filters small{ font-weight: lighter; text-transform: uppercase; color: #999;}
 #appscontainer{float:left; margin-left: 20px; height: auto;}
 #appscontainer h1, .name h1{ text-transform: none !important;}
@@ -39,12 +7,11 @@ border-bottom: 2px solid #DADADA;
 	padding: 0; padding-bottom: 30px;
 	overflow-x: scroll;
 	overflow-y: hidden;
+	min-width: 1300px;
 }
 #widgetlist a, .appname{ height: 100%; width: 100%; display: block; color: black;
 }
 #widgetlist a:visited{color: black;}
-/*#widgetlist, .isotope{overflow: visible !important;}
-*/
 .listmask{ overflow: hidden; height: 102px;}
 .listmask, .listspan{ width: 500px; margin: 0 3px 0 3px; float: left; }
 .listspan{ height: 120px; overflow-x: scroll; overflow-y: hidden;}
@@ -71,7 +38,7 @@ small.muted{
 	font-weight: lighter;
 	color: black;
 }
-.name{margin-top: 30px; margin-left: 25px; width: 100%; float: left;}
+.name{margin-top: 0px; margin-left: 25px; width: 100%; float: left;}
 .name h1{ font-family: "DINNextLTPro-Light";}
 .shortDescript{ 
 	padding-bottom: 22px;
@@ -138,4 +105,29 @@ height: 35px;
 float: left;
 cursor: pointer;
 margin-left: 12px;
+}
+#widgetgrid li {
+display: inline;
+width: 120px;
+float: left;
+height: 120px;
+margin: 5px;
+}
+#widgetgrid{
+width: 600px;
+height: 100%;
+min-height: 400px;
+margin-left: -55px;
+}
+#sliderlist{
+width: 900px;
+margin: 0 auto;
+height: 230px;
+}
+#sliderlist h2{
+border-top: 1px solid #D3D3D3;
+width: 550px;
+text-align: center;
+margin-top: 50px;
+padding-top: 10px;
 }

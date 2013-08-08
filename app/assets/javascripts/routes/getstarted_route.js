@@ -4,7 +4,6 @@ ZenlabsBeta.GetstartedRoute = Ember.Route.extend({
 			this.controllerFor('getstarted').set('activeTab', name);
 			this.render(name, { into: 'getstarted', outlet: 'maintab' });
     	}
-
 	},
 
 	renderTemplate: function(){
@@ -16,5 +15,3 @@ ZenlabsBeta.GetstartedRoute = Ember.Route.extend({
 		controller.set('activeTab', 'privateapps');
 	}
 });
-
-

@@ -1,0 +1,17 @@
+<div id="sliderlist">
+  <h2>More Apps</h2>
+  <div class="leftarrow"><span>prev</span></div>
+  <div class="listmask">
+    <div class="listspan">
+      <ul id="widgetlist">
+        {{#each model}}
+        <li {{bindAttr class="category :item :whitebox :shadow"}}>
+          <span class="appname">{{#linkTo 'extension' this}}{{name}}{{/linkTo}}</span>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+  <div class="rightarrow"><span>next</span></div>
+</div>
