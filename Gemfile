@@ -18,6 +18,7 @@ gem 'mysql2'
 gem 'carrierwave'
 gem 'fog', '~> 1.3.1' # Need to specify version, as carrierwave references older (0.9.0)
 gem 'rmagick'
+gem 'cloudinary'
 
 
 
