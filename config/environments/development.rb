@@ -39,6 +39,8 @@ ZenlabsBeta::Application.configure do
     # Add the fonts path
   config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
+  config.autoload_paths += %W(#{config.root}/lib #{config.root}/app/uploaders)
+
   # Precompile additional assets
   config.assets.precompile += %w( .svg .eot .woff .otf )
 

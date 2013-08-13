@@ -10,6 +10,8 @@ ZenlabsBeta::Application.routes.draw do
   end
 
   root :to => 'ember#start'
+  
+  mount JasmineRails::Engine => '/spec' if defined?(JasmineRails)
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.

@@ -1,0 +1,44 @@
+<form {{action save on="submit"}} >
+  <legend>Edit Ext</legend>
+
+	<div class="control-group">
+	  <label class="control-label" for="name">name</label>
+	  <div class="controls">
+	    {{view Ember.TextField valueBinding="name" id="name" placeholder="App name" required="true"}}
+	  </div>
+	</div>
+	<div class="control-group">
+	  <label class="control-label" for="download_url">Github url</label>
+	  <div class="controls">
+	    {{view Ember.TextField valueBinding="download_url" id="ghurl" placeholder="https://github.com/zendesklabs/repo" required="true"}}
+	  </div>
+	</div>
+	<div class="control-group">
+	  <label class="control-label" for="short_description">Description</label>
+	  <div class="controls">
+	    {{view Ember.TextField valueBinding="short_description" id="description"  placeholder="What does it do"}}
+	  </div>
+	</div>
+	<div class="control-group">
+	  <label class="control-label" for="notes">Notes</label>
+	  <div class="controls">
+	    {{view Ember.TextArea valueBinding="notes" id="notes" placeholder="Notes"}}
+	  </div>
+	</div>
+	<div class="control-group">
+	  <label class="control-label" for="author_type">Author</label>
+	  <div class="controls">
+	    {{view Ember.TextField valueBinding="author_type" id="author"  placeholder="services"}}
+	  </div>
+	</div>
+	<div class="control-group">
+	  <label class="control-label" for="icon_url">Icon</label>
+	  <div class="controls">
+	    {{view Ember.TextField valueBinding="icon_url" id="icon"  placeholder="icon"}}
+	  </div>
+	</div>	
+  <div class="form-actions">
+    {{submitButton "Update"}}
+    <button class="btn" {{action cancel}}>Cancel</button>
+  </div>
+</form>

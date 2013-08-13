@@ -67,5 +67,6 @@ module ZenlabsBeta
 
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .otf )
+    config.autoload_paths += %W(#{config.root}/lib #{config.root}/app/uploaders)
   end
 end

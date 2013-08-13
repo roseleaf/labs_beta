@@ -10,14 +10,14 @@ gem "ember-source", "~> 1.0.0.rc6"
 gem 'active_model_serializers'
 gem 'jquery-rails'
 gem 'thin'  
-gem 'ember-rails', :git => 'git://github.com/emberjs/ember-rails.git'
-
+# gem 'ember-rails', :git => 'git://github.com/emberjs/ember-rails.git'
+gem 'ember-rails', github: 'emberjs/ember-rails'
 
 
 gem 'mysql2'
-gem 'carrierwave'
 gem 'fog', '~> 1.3.1' # Need to specify version, as carrierwave references older (0.9.0)
 gem 'rmagick'
+gem 'carrierwave'
 gem 'cloudinary'
 
 
@@ -39,22 +39,14 @@ end
 
 
 
-
-group :test do
-	gem 'jasmine'
-end
-
-group :development do
+group :development, :test do
 	gem 'quiet_assets'
-  # gem 'rspec-rails'
+  gem 'rspec-rails'
   # gem 'rb-fsevent'
-  # gem 'guard-rspec'    
-
+  gem 'guard-rspec'    
+  gem "jasminerice"
+  gem 'jasmine-rails'
 end
-
-group :development, :test do  
-    gem "jasminerice"
-end  
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,4 +1,5 @@
 require "spec_helper"
+require "carrierwave"
 
 describe Extension do
   it "has no extensions in the database" do
@@ -16,4 +17,5 @@ describe Extension do
     expect(Extension.where(:name => "Test App")).to have(1).record
     expect(Extension.where(:name => "Non App")).to have(0).records
   end
+
 end

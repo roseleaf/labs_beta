@@ -1,4 +1,3 @@
-# A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
 guard :rspec do
@@ -18,7 +17,14 @@ guard :rspec do
   watch(%r{^app/views/(.+)/.*\.(erb|haml)$})          { |m| "spec/features/#{m[1]}_spec.rb" }
 
   # Turnip features and steps
-  watch(%r{^spec/acceptance/(.+)\.feature$})
-  watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$})   { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'spec/acceptance' }
+#  watch(%r{^spec/acceptance/(.+)\.feature$})
+#  watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$})   { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'spec/acceptance' }
 end
 
+guard :jasmine, :server_mount => '/specs' do
+ watch(%r{app/assets/javascripts/(.+)\.(js)$}) { |m| "spec/javascripts/#{m[1]}_spec.#{m[2]}" }
+ watch(%r{spec/javascripts/(.+)_spec\.(js)$})  { |m| "spec/javascripts/#{m[1]}_spec.#{m[2]}" }
+ watch(%r{spec/javascripts/spec\.(js)$})       { "spec/javascripts" }
+end
+
+# guard 'jasmine', :server => :pow, :server_mount => '/specs' do
