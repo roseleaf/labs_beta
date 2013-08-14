@@ -6,12 +6,9 @@ ZenlabsBeta.GetstartedView = Ember.View.extend({
   }).observes('activeTab'),
 
   didInsertElement: function() {
-    this.setActiveTab();
-  },
-
-  setActiveTab: function() {
-    $('.active').removeClass('active');
-    var activeTab = this.get('activeTab');
-    this.$("a[data-tab='%@']".fmt(activeTab)).parent().addClass('active');
+    $('#directionsType a').click(function(){
+      $('.active').removeClass('active');
+      $(this).addClass('active');
+    });
   }
 });

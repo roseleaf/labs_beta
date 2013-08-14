@@ -35,8 +35,8 @@ body {
   color: #000;
   line-height: 18px;
   font-size: 16px;
-  font-family: "DNLTM", "Helvetica Neue",Helvetica,Arial,sans-serif;  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;  line-height: 1.5;
+  -webkit-font-smoothing: auto;  
 }
 html, body {
   height: 100%;
@@ -45,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
   color:#80A41A;
-  letter-spacing: -1px;
   text-shadow: 1px 1px 4px white;
 }
 p, ol, ul, td {
@@ -95,7 +94,7 @@ div {
     color: #fff;
   }
   ul li {
-    font-size: 12px;
+    font-size: 13px;
     list-style: square;
   }
 }
