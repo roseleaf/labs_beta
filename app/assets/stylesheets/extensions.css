@@ -13,7 +13,7 @@
 }
 #widgetlist a:visited{color: black;}
 .listmask{ overflow: hidden; height: 102px;}
-.listmask, .listspan{ width: 500px; margin: 0 3px 0 3px; float: left; }
+.listmask, .listspan{ width: 510px; margin: 0 3px 0 16px; float: left; }
 .listspan{ height: 120px; overflow-x: scroll; overflow-y: hidden;}
 #widgetlist li{ 
 	margin: 0 5px 10px 5px;

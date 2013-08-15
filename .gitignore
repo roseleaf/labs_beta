@@ -16,4 +16,3 @@
 
 # Ignore database file
 /config/database.yml/config/application.yml
-/config/cloudinary.yml
