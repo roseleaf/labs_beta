@@ -12,8 +12,9 @@
 #widgetlist a, .appname{ height: 100%; width: 95%; display: block; color: black; margin: 0 auto;
 }
 #widgetlist a:visited{color: black;}
-.listmask{ overflow: hidden; height: 102px;}
-.listmask, .listspan{ width: 510px; margin: 0 3px 0 16px; float: left; }
+.listmask{ overflow: hidden; height: 102px; margin: 0 3px 0 16px; }
+.listspan{margin: 0 3px 0 3px; }
+.listmask, .listspan{ width: 510px; float: left; }
 .listspan{ height: 120px; overflow-x: scroll; overflow-y: hidden;}
 #widgetlist li{ 
 	margin: 0 5px 10px 5px;

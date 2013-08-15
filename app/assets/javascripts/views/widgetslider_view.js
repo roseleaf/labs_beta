@@ -12,7 +12,7 @@ ZenlabsBeta.WidgetsliderView = Ember.View.extend({
 		var listwidth = $(".item:first").outerWidth(true) * $('.item').length,
 			itemwidth = $(".item:first").outerWidth(true),
 			isMouseDown = false,
-			maxleft = listwidth - (itemwidth *4.55);
+			maxleft = listwidth - (itemwidth *4.55) -10;
 		getLeftPos = function(){ return $('.listspan').scrollLeft(); };
 		fadeArrows = function(){
 			var leftPos = getLeftPos();
@@ -50,9 +50,6 @@ ZenlabsBeta.WidgetsliderView = Ember.View.extend({
 			} else {
 				$('.rightarrow').fadeOut();
 			};
-		})
-		.dblclick(function(){
-			$('.listspan').animate({scrollLeft: maxleft}, 800);
 		});
 		if ($('.item').length <= 1 ) {
 			$('#sliderlist').hide();
