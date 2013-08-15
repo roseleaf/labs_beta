@@ -28,7 +28,7 @@ ZenlabsBeta.WidgetsliderView = Ember.View.extend({
 		};
 		$('.leftarrow, .rightarrow').unbind('click');
 		$("#widgetlist").width(listwidth);
-		$('.leftarrow').hide();
+		fadeArrows();
 		$(".leftarrow").click(function(){
 			$('.rightarrow').fadeIn();
 			var leftPos = getLeftPos();

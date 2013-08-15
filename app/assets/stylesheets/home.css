@@ -1,12 +1,4 @@
-#overlay{
-  width: 100%;
-  height: 100%;
-  background: black;
-  position: fixed;
-  opacity: 0.5;
-  margin-top: -10px;
-  display: none;
-}
+
 #main{
   width: 940px;
   margin: 10px auto;

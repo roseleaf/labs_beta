@@ -7,9 +7,8 @@
 		<p><span class="bold">Category:</span> {{category}}</p>
 		<p><span class="bold">Notes:</span> {{markdown notes}}</p>
 		<p class="downloadButton">
-			<a {{bindAttr href="zip_url"}} class="bottom-right-link">Download</a>
+			<a {{ action 'showModal' target='view'}}class="bottom-right-link">Download</a>
 		</p>
 	</div>
 </div>
-{{! view ZenlabsBeta.WidgetsliderView controllerBinding="ZenlabsBeta.ExtensionsController"}}
 {{outlet slider}}
