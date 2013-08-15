@@ -3,25 +3,52 @@ ZenlabsBeta.WidgetsliderView = Ember.View.extend({
 	controller: ZenlabsBeta.ExtensionsController,
 	didInsertElement: function(){
 		this.setGallery();
+	},
+	parentViewDidChange: function(){
+		this.setGallery();
 		// this.setBinds();
 	},	
 	setGallery: function(){
 		var listwidth = $(".item:first").outerWidth(true) * $('.item').length,
 			itemwidth = $(".item:first").outerWidth(true),
 			isMouseDown = false,
-			maxleft = listwidth - (itemwidth *3.4);
+			maxleft = listwidth - (itemwidth *4.55);
+		getLeftPos = function(){ return $('.listspan').scrollLeft(); };
+		fadeArrows = function(){
+			var leftPos = getLeftPos();
+			if (leftPos <= 0) {
+				$('.leftarrow').fadeOut();	
+				$('.rightarrow').fadeIn();							
+			} else if (leftPos >= maxleft) {
+				$('.rightarrow').fadeOut();	
+				$('.leftarrow').fadeIn();			
+			} else if ( 0 < leftPos < maxleft ) {
+				$('.leftarrow, .rightarrow').fadeIn();
+			}
+		};
 		$('.leftarrow, .rightarrow').unbind('click');
 		$("#widgetlist").width(listwidth);
+		$('.leftarrow').hide();
 		$(".leftarrow").click(function(){
-			var min = $('.listspan').scrollLeft();
-			if (min > 0) {
-				$('.listspan').animate({scrollLeft: 0}, 800);
+			$('.rightarrow').fadeIn();
+			var leftPos = getLeftPos();
+			var scrollValue = leftPos + itemwidth *-3.4;
+			if (leftPos > 0) {
+				$('.listspan').animate({scrollLeft: scrollValue}, 800);
+			} else {
+				$('.leftarrow').fadeOut();				
 			};
 		});
+		$('.listspan').scroll( function(){
+			fadeArrows();
+		});
 		$(".rightarrow").click(function(){
-			var min = $('.listspan').scrollLeft();
-			if (min < maxleft ){
-				$('.listspan').animate({scrollLeft: min + itemwidth *3.4}, 800);
+			var leftPos = getLeftPos();
+			$('.leftarrow').fadeIn();			
+			if (leftPos < maxleft ){
+				$('.listspan').animate({scrollLeft: leftPos + itemwidth *3.4}, 800);
+			} else {
+				$('.rightarrow').fadeOut();
 			};
 		})
 		.dblclick(function(){
