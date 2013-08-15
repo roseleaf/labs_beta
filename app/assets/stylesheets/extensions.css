@@ -12,9 +12,9 @@
 #widgetlist a, .appname{ height: 100%; width: 95%; display: block; color: black; margin: 0 auto;
 }
 #widgetlist a:visited{color: black;}
-.listmask{ overflow: hidden; height: 102px; margin: 0 3px 0 16px; }
+.listmask{ overflow: hidden; height: 102px; margin: 0 3px 0 20px; }
 .listspan{margin: 0 3px 0 3px; }
-.listmask, .listspan{ width: 510px; float: left; }
+.listmask, .listspan{ width: 520px; float: left; }
 .listspan{ height: 120px; overflow-x: scroll; overflow-y: hidden;}
 #widgetlist li{ 
 	margin: 0 5px 10px 5px;
@@ -31,7 +31,7 @@
 .item a{ width: 100%; height: 100%; display: block; }
 #filterhead{font-family: 'DINNextLTPro-Light'; margin: 15px 0 0 633px; width: 92px; height: 50px; text-align: right;}
 #singleapp{
-max-width: 495px;
+max-width: 515px;
 /*border: 2px solid #ddd;
 background: #FFF;*/
 padding: 10px 25px 20px 26px;
@@ -42,7 +42,7 @@ small.muted{
 	color: black;
 }
 .name{margin-top: 0; margin-left: 25px; width: 100%; float: left;}
-.name h1{ font-family: "DINNextLTPro-Light";}
+.name h1{ font-family: "DINNextLTPro-Light"; margin-left: -2px; }
 .shortDescript{ 
 	padding-bottom: 22px;
 	width: 100%;
@@ -50,7 +50,12 @@ small.muted{
 	font-size: 16px;
 	font-weight: lighter;
 }
-.downloadButton{ margin-bottom: 40px;}
+.description h1{ font-size: 24px; }
+.description h2{ font-size: 18px; }
+.description h3{ font-size: 16px; }
+.description h4{ font-size: 14px; }
+.description p{ margin-right: 10px; }
+.downloadButton{ margin-bottom: 60px; margin-top: 24px; }
 .leftarrow{
 float: left;
 width: 42px;
@@ -133,7 +138,7 @@ margin-bottom: 23px;
 width: 600px;
 height: 100%;
 min-height: 100px;
-margin-left: -55px;
+margin-left: -60px;
 overflow: visible !important;
 }
 #sliderlist{
@@ -143,9 +148,11 @@ height: 230px;
 }
 #sliderlist h2{
 border-top: 1px solid #D3D3D3;
-width: 550px;
+width: 515px;
 text-align: center;
 margin-top: 50px;
 padding-top: 10px;
+margin-left: 26px;
 }
 #sliderback { background-color: #f3f3f3; }
+.single{ margin-left: -11px; }
