@@ -1,1 +1,1 @@
-ZenlabsBeta.LimboRoute = Ember.Route.extend({});
+App.LimboRoute = Ember.Route.extend({});

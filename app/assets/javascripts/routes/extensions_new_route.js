@@ -1,9 +1,9 @@
-ZenlabsBeta.ExtensionsNewRoute = Ember.Route.extend({
+App.ExtensionsNewRoute = Ember.Route.extend({
   // model: function() {
   //   // Because we are maintaining a transaction locally in the controller for editing,
   //   // the new record needs to be created in the controller.
   //   // return null;
-  //   return ZenlabsBeta.Extension.find();
+  //   return App.Extension.find();
 
   // },
 

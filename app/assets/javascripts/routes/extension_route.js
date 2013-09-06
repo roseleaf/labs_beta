@@ -1,4 +1,4 @@
-ZenlabsBeta.ExtensionRoute = Ember.Route.extend({
+App.ExtensionRoute = Ember.Route.extend({
 	renderTemplate: function(){
 		var controller = this.controllerFor('extensions');
 		this.render();

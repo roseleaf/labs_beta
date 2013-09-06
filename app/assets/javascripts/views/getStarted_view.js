@@ -1,4 +1,4 @@
-ZenlabsBeta.GetstartedView = Ember.View.extend({
+App.GetstartedView = Ember.View.extend({
   didInsertElement: function() {
     this.setActiveTab();
   },

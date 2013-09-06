@@ -1,6 +1,6 @@
-ZenlabsBeta.ExtensionsRoute = Ember.Route.extend({
+App.ExtensionsRoute = Ember.Route.extend({
 	model: function(){
-		return ZenlabsBeta.Extension.find();
+		return App.Extension.find();
 	},
 	renderTemplate: function(){
 		this.render('sidenav', {into: 'application', outlet: 'sideFilter'});		

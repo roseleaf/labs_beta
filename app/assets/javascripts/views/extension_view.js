@@ -1,4 +1,4 @@
-ZenlabsBeta.ExtensionView = Ember.View.extend({
+App.ExtensionView = Ember.View.extend({
 	showModal: function(){
 		modal: this.createChildView(Ember.View.create({
 			templateName: 'disclaimer',
