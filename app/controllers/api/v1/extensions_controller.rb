@@ -1,6 +1,6 @@
 class Api::V1::ExtensionsController < ApplicationController
   respond_to :json    
-  before_filter :restrict_access, :except => [:index, :show]
+  # before_filter :restrict_access, :except => [:index, :show]
 
 
   def index
@@ -8,6 +8,7 @@ class Api::V1::ExtensionsController < ApplicationController
   end
 
   def show
+    logger.info "meeeeeep"
     respond_with Extension.find(params[:id])
   end
 
@@ -55,7 +56,11 @@ class Api::V1::ExtensionsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  def github_push
+    logger.info "*******************************************************"
+    push = JSON.parse(params[:payload])
+    logger.info "I got some JSON: #{push.inspect}"
+  end
 
 private
 

@@ -1,0 +1,8 @@
+pkg
+.project
+.rvmrc
+assets/
+vendor/assets/
+Gemfile.lock
+.DS_Store
+*.tmproj

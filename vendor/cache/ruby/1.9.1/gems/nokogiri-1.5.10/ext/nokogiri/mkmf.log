@@ -1,0 +1,429 @@
+package configuration for libxslt is not found
+package configuration for libxml-2.0 is not found
+package configuration for libiconv is not found
+find_header: checking for libxml/parser.h... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib      -lruby.1.9.1  -lpthread -ldl -lobjc  "
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc-4.6 -E -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/parser.h>
+/* end */
+
+--------------------
+
+find_header: checking for libxslt/xslt.h... -------------------- yes
+
+"gcc-4.6 -E -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxslt/xslt.h>
+/* end */
+
+--------------------
+
+find_header: checking for libexslt/exslt.h... -------------------- yes
+
+"gcc-4.6 -E -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libexslt/exslt.h>
+/* end */
+
+--------------------
+
+have_func: checking for iconv_open() in iconv.h... -------------------- no
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib      -lruby.1.9.1  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:7:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+Undefined symbols for architecture x86_64:
+  "_iconv_open", referenced from:
+      _t in cctrjc0A.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <iconv.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib      -lruby.1.9.1  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:7:1: error: too few arguments to function 'iconv_open'
+/usr/include/iconv.h:65:9: note: declared here
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <iconv.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { iconv_open(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for iconv_open() in -liconv... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib      -lruby.1.9.1 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:7:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <iconv.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+/* end */
+
+--------------------
+
+find_library: checking for xmlParseDoc() in -lxml2... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -liconv  -lruby.1.9.1 -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:53: error: 'xmlParseDoc' undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlParseDoc; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -liconv  -lruby.1.9.1 -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:1: warning: implicit declaration of function 'xmlParseDoc' [-Wimplicit-function-declaration]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlParseDoc(); return 0; }
+/* end */
+
+--------------------
+
+find_library: checking for xsltParseStylesheetDoc() in -lxslt... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lxml2 -liconv  -lruby.1.9.1 -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:53: error: 'xsltParseStylesheetDoc' undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lxml2 -liconv  -lruby.1.9.1 -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:1: warning: implicit declaration of function 'xsltParseStylesheetDoc' [-Wimplicit-function-declaration]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xsltParseStylesheetDoc(); return 0; }
+/* end */
+
+--------------------
+
+find_library: checking for exsltFuncRegister() in -lexslt... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:53: error: 'exsltFuncRegister' undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))exsltFuncRegister; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:1: warning: implicit declaration of function 'exsltFuncRegister' [-Wimplicit-function-declaration]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { exsltFuncRegister(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlHasFeature()... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:53: error: 'xmlHasFeature' undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:1: warning: implicit declaration of function 'xmlHasFeature' [-Wimplicit-function-declaration]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlHasFeature(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlFirstElementChild()... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:53: error: 'xmlFirstElementChild' undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:1: warning: implicit declaration of function 'xmlFirstElementChild' [-Wimplicit-function-declaration]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlFirstElementChild(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:53: error: 'xmlRelaxNGSetParserStructuredErrors' undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:1: warning: implicit declaration of function 'xmlRelaxNGSetParserStructuredErrors' [-Wimplicit-function-declaration]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:53: error: 'xmlRelaxNGSetParserStructuredErrors' undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:1: warning: implicit declaration of function 'xmlRelaxNGSetParserStructuredErrors' [-Wimplicit-function-declaration]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetValidStructuredErrors()... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:53: error: 'xmlRelaxNGSetValidStructuredErrors' undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:1: warning: implicit declaration of function 'xmlRelaxNGSetValidStructuredErrors' [-Wimplicit-function-declaration]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlRelaxNGSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetValidStructuredErrors()... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:53: error: 'xmlSchemaSetValidStructuredErrors' undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:1: warning: implicit declaration of function 'xmlSchemaSetValidStructuredErrors' [-Wimplicit-function-declaration]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlSchemaSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetParserStructuredErrors()... -------------------- yes
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:53: error: 'xmlSchemaSetParserStructuredErrors' undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return 0; }
+/* end */
+
+"gcc-4.6 -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/x86_64-darwin12.3.0 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/ruby-1.9.1 -I. -I/usr/local/Cellar/libxml2/2.9.1/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include/libxml2 -I/opt/local/include -I/usr/local/include -I/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/include -I/usr/include -I/usr/include/libxml2 -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/local/Cellar/libxml2/2.9.1/lib -L/opt/local/lib -L/usr/local/lib -L/Users/ktrujillo/.rvm/rubies/ruby-1.9.3-p374/lib -L/usr/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L.  -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lexslt -lxslt -lxml2 -liconv  -lruby.1.9.1 -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  "
+conftest.c: In function 't':
+conftest.c:5:1: warning: implicit declaration of function 'xmlSchemaSetParserStructuredErrors' [-Wimplicit-function-declaration]
+ld: warning: directory not found for option '-L/usr/local/Cellar/libxml2/2.9.1/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlSchemaSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
