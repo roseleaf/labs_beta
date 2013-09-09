@@ -60,6 +60,10 @@ class Api::V1::ExtensionsController < ApplicationController
     puts "*******************************************************"
     push = JSON.parse(params[:payload])
     puts "I got some JSON: #{push}"
+
+    respond_to do |format|
+      format.json { head :no_content }
+    end    
   end
 
 private
