@@ -59,7 +59,7 @@ class Api::V1::ExtensionsController < ApplicationController
   def github_push
     puts "*******************************************************"
     push = JSON.parse(params[:payload])
-    puts "I got some JSON: #{push.inspect}"
+    puts "I got some JSON: #{push}"
   end
 
 private
