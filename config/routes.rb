@@ -6,6 +6,7 @@ ZenlabsBeta::Application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :extensions, :defaults => { :format => 'json' }
+      match 'extensions/github_push' => 'extensions#github_push', :via => :post 
     end
   end
 
