@@ -1,4 +1,4 @@
-ZenlabsBeta.ExtensionEditController = Em.ObjectController.extend({
+App.ExtensionEditController = Em.ObjectController.extend({
   needs: ['extension'],
 
   startEditing: function() {

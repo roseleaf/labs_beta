@@ -1,4 +1,4 @@
-ZenlabsBeta.GetstartedRoute = Ember.Route.extend({
+App.GetstartedRoute = Ember.Route.extend({
 	events: {
 		selectTab: function(name) {
 			this.render(name, { into: 'getstarted', outlet: 'maintab' });

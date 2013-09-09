@@ -5,7 +5,7 @@ ZenlabsBeta::Application.routes.draw do
   # root :to => 'extensions#index'
   namespace :api do
     namespace :v1 do
-      resources :extensions
+      resources :extensions, :defaults => { :format => 'json' }
     end
   end
 

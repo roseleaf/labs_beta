@@ -1,6 +1,6 @@
-ZenlabsBeta.WidgetsliderView = Ember.View.extend({
+App.WidgetsliderView = Ember.View.extend({
 	templateName: 'widgetslider',
-	controller: ZenlabsBeta.ExtensionsController,
+	controller: App.ExtensionsController,
 	didInsertElement: function(){
 		this.setGallery();
 	},

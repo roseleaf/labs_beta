@@ -1,6 +1,6 @@
-//ZenlabsBeta.ExtensionController = Ember.ObjectController.extend({});
+//App.ExtensionController = Ember.ObjectController.extend({});
 
-ZenlabsBeta.ExtensionController = Ember.ObjectController.extend({
+App.ExtensionController = Ember.ObjectController.extend({
   isEditing: false,
   needs: ['extensionEdit'],	
   recordsLoaded: (function() {

@@ -1,4 +1,4 @@
-ZenlabsBeta.Router.map(function() {
+App.Router.map(function() {
   this.route("getstarted");
   this.route("home", {path: "index"});	
   this.resource('extensions', function() {

@@ -13,7 +13,7 @@ gem 'thin'
 # gem 'ember-rails', :git => 'git://github.com/emberjs/ember-rails.git'
 gem 'ember-rails', github: 'emberjs/ember-rails'
 
-
+gem 'rack-cors', :require => 'rack/cors'
 gem 'mysql2'
 gem 'fog', '~> 1.3.1' # Need to specify version, as carrierwave references older (0.9.0)
 gem 'rmagick'

@@ -1,4 +1,4 @@
-ZenlabsBeta.ExtensionsView = Ember.View.extend({
+App.ExtensionsView = Ember.View.extend({
 	didInsertElement: function(){
 		this.displayFilter();
 	},
