@@ -8,7 +8,7 @@ class Api::V1::ExtensionsController < ApplicationController
   end
 
   def show
-    logger.info "meeeeeep"
+    puts "meeeeeep"
     respond_with Extension.find(params[:id])
   end
 
@@ -57,9 +57,9 @@ class Api::V1::ExtensionsController < ApplicationController
     end
   end
   def github_push
-    logger.info "*******************************************************"
+    puts "*******************************************************"
     push = JSON.parse(params[:payload])
-    logger.info "I got some JSON: #{push.inspect}"
+    puts "I got some JSON: #{push.inspect}"
   end
 
 private
