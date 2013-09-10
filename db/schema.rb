@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130808071929) do
+ActiveRecord::Schema.define(:version => 20130910050144) do
 
   create_table "api_keys", :force => true do |t|
     t.string   "access_token"
@@ -20,14 +20,15 @@ ActiveRecord::Schema.define(:version => 20130808071929) do
   end
 
   create_table "extensions", :force => true do |t|
-    t.string "name"
-    t.string "download_url"
-    t.string "short_description"
-    t.text   "notes"
-    t.string "category"
-    t.string "interface"
-    t.string "author_type"
-    t.string "icon"
+    t.string  "name"
+    t.string  "download_url"
+    t.string  "short_description"
+    t.text    "notes"
+    t.string  "category"
+    t.string  "interface"
+    t.string  "author_type"
+    t.string  "icon"
+    t.integer "github_id"
   end
 
 end

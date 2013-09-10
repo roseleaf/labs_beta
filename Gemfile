@@ -11,7 +11,7 @@ gem 'active_model_serializers'
 gem 'jquery-rails'
 gem 'thin'  
 # gem 'ember-rails', :git => 'git://github.com/emberjs/ember-rails.git'
-gem 'ember-rails', github: 'emberjs/ember-rails'
+gem 'ember-rails', :github => 'emberjs/ember-rails'
 
 gem 'rack-cors', :require => 'rack/cors'
 gem 'mysql2'
