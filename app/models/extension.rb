@@ -39,7 +39,7 @@ class Extension < ActiveRecord::Base
 		url = stripped_url
 		contents = ""
 
-		readme_link = "https://raw." + base_link + "/master/README.md"
+		readme_link = "https://raw." + url + "/master/README.md"
 		puts "readme_link: #{readme_link}"
 
 		begin
@@ -55,9 +55,15 @@ class Extension < ActiveRecord::Base
 			contents = self.notes
 		end
 #		contents = readme_link
+		self.notes = contents
+		return self.notes
 	end
 	def icon_url
-		self.icon.url
+		if self.interface == 'classic'
+			return '/assets/default.png'
+		else
+			return image_link = "https://raw." + stripped_url + "/master/assets/logo.png"
+		end
 	end
 	def icon_thumb
 		self.icon.thumb.url

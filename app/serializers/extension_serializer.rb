@@ -1,5 +1,5 @@
 class ExtensionSerializer < ActiveModel::Serializer
-  attributes :id, :name, :download_url, :short_description, :notes, :category, :interface, :author_type, :zip_url, :icon_url, :icon_thumb
+  attributes :id, :name, :download_url, :short_description, :notes, :category, :interface, :author_type, :zip_url, :icon_url, :icon_thumb, :readme
   def readme
   	(object).readme
   end
