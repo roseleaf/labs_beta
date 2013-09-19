@@ -1,4 +1,8 @@
 ZenlabsBeta::Application.routes.draw do
+  get "session/create"
+
+  get "session/destroy"
+
   get "ember/start"
 
   # resources :extensions

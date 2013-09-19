@@ -54,7 +54,6 @@ class Extension < ActiveRecord::Base
 			logger.info e.message
 			contents = self.notes
 		end
-#		contents = readme_link
 		self.notes = contents
 		return self.notes
 	end
@@ -68,5 +67,19 @@ class Extension < ActiveRecord::Base
 	def icon_thumb
 		self.icon.thumb.url
 	end
-
+	def self.github_sync
+		# lab_repos = self.get_lab_repos
+		# puts "repos: #{lab_repos[1]}"
+		Extension.find_each(batch_size: 10) do |extension|
+			puts "ladeedaa"
+  		end
+  	end
+  	def self.get_lab_repos
+	    begin
+	      JSON.parse HTTParty.get('https://api.github.com/orgs/zendesklabs/repos').response.body
+	    rescue
+	      nil
+	    end	
+	end  		
 end
+

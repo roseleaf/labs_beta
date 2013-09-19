@@ -8,7 +8,6 @@ class Api::V1::ExtensionsController < ApplicationController
   end
 
   def show
-    puts "meeeeeep"
     respond_with Extension.find(params[:id])
   end
 
@@ -57,11 +56,9 @@ class Api::V1::ExtensionsController < ApplicationController
     end
   end
   def github_push
-    puts "*******************************************************"
     push = JSON.parse(params[:payload])
     @extension = Extension.where(github_id: push['repository']['id']).first
     puts "I got some JSON: #{@extension}"
-
     if (push['head_commit']['modified'].include?('README.md') || push['head_commit']['added'].include?('README.md')) && @extension
       @extension.fetch_readme
       @extension.save!      
@@ -70,11 +67,6 @@ class Api::V1::ExtensionsController < ApplicationController
       format.json { head :no_content }
     end    
   end
-  # def callreadme(ghid)
-  #   @extension = Extension.where(github_id: ghid).first
-  #   @extension.fetch_readme
-  #   @extension.save
-  # end
 
 private
 

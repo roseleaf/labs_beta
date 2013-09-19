@@ -1,5 +1,5 @@
 .isotope,
-.isotope .isotope-item {
+.isotope .isotope-item, #main {
   /* change duration value to whatever you like */
   -webkit-transition-duration: 0.8s;
      -moz-transition-duration: 0.8s;
@@ -8,7 +8,7 @@
           transition-duration: 0.8s;
 }
 
-.isotope .isotope-item {
+.isotope .isotope-item, #main {
   -webkit-transition-property: height, width, background;
      -moz-transition-property: height, width, background;
       -ms-transition-property: height, width, background;
@@ -16,7 +16,7 @@
           transition-property: height, width, background;
 }
 
-.isotope .isotope-item {
+.isotope .isotope-item, #main {
   -webkit-transition-property: -webkit-transform, opacity;
      -moz-transition-property:    -moz-transform, opacity;
       -ms-transition-property:     -ms-transform, opacity;
