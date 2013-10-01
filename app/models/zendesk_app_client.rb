@@ -1,5 +1,5 @@
 require 'httparty'
-class Session
+class ZendeskAppClient
   include HTTParty
   base_uri ''
   attr_accessor :auth, :options, :subdomain, :client
@@ -23,6 +23,7 @@ class Session
 
   def upload_app( extension )
   	extension_file = HTTParty.get(extension[:download_zip_url])
+    # TODO right here, convert HTTParty object into strigified JSON
   	options.merge!({ :body => { :uploaded_data => extension_file }, basic_auth: @auth })
   	self.class.post("/api/v2/apps/uploads.json", options)
   end
