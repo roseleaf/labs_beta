@@ -14,11 +14,10 @@ gem 'ember-rails', :github => 'emberjs/ember-rails'
 
 gem 'rack-cors', :require => 'rack/cors'
 gem 'mysql2'
-gem 'fog', '~> 1.3.1' # Need to specify version, as carrierwave references older (0.9.0)
-gem 'rmagick'
-gem 'carrierwave'
 gem 'rufus-scheduler'
-gem 'httparty'
+gem 'oauth2'
+gem 'zendesk_api'
+# gem 'zendesk_api_client_rb', :git => 'git://github.com/roseleaf/zendesk_api_client_rb.git'
 
 # http://developer.zendesk.com/documentation/apps/reference/api.html
 

@@ -1,7 +1,7 @@
 ZenlabsBeta::Application.routes.draw do
-  get "session/create"
+  # get "session/create"
 
-  get "session/destroy"
+  # get "session/destroy"
 
   get "ember/start"
 
@@ -11,6 +11,10 @@ ZenlabsBeta::Application.routes.draw do
     namespace :v1 do
       resources :extensions, :defaults => { :format => 'json' }
       match 'extensions/github_push' => 'extensions#github_push', :via => :post 
+      match "get_auth_url" => 'zendesk_client#get_auth_url', :via => :get
+      match "zendesk_client/callback" => 'zendesk_client#callback', :via => :get
+      match "passback" => 'zendesk_client#passback'
+      match "set_account" => 'zendesk_client#set_account', :via => :post
     end
   end
 
@@ -18,13 +22,4 @@ ZenlabsBeta::Application.routes.draw do
   
   mount JasmineRails::Engine => '/spec' if defined?(JasmineRails)
 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
-
-  # See how all your routes lay out with "rake routes"
-
-  # This is a legacy wild controller route that's not recommended for RESTful applications.
-  # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
 end

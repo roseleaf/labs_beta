@@ -1,5 +1,4 @@
 require "spec_helper"
-require "carrierwave"
 
 describe Extension do
   it "has no extensions in the database" do

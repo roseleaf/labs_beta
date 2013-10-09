@@ -7,5 +7,4 @@ App.Extension = App.Model.extend({
 	author_type: DS.attr('string'),
 	zip_url: DS.attr('string'),
 	icon_url: DS.attr('string'),
-	icon_thumb: DS.attr('string')
 });

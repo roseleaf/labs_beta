@@ -1,0 +1,42 @@
+# -*- encoding: utf-8 -*-
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
+
+require 'zendesk_api/version'
+
+Gem::Specification.new do |s|
+  s.name        = "zendesk_api"
+  s.version     = ZendeskAPI::VERSION
+  s.platform    = Gem::Platform::RUBY
+  s.authors     = ["Steven Davidovitz", "Michael Grosser"]
+  s.email       = ["support@zendesk.com"]
+  s.homepage    = "http://developer.zendesk.com"
+  s.summary     = %q{Zendesk REST API Client}
+  s.description = %q{Ruby wrapper for the REST API at http://www.zendesk.com. Documentation at http://developer.zendesk.com.}
+  s.license = 'Apache License Version 2.0'
+
+  s.required_ruby_version     = ">= 1.8.7"
+  s.required_rubygems_version = ">= 1.3.6"
+
+  s.add_development_dependency "bump"
+  s.add_development_dependency "rake"
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "vcr"
+  s.add_development_dependency "webmock", "~> 1.9.0"
+  s.add_development_dependency "yard"
+
+# Optional. Only used for uploads testing.
+#  s.add_development_dependency "actionpack"
+
+  s.add_runtime_dependency "faraday", ">= 0.8.0"
+  s.add_runtime_dependency "faraday_middleware", ">= 0.8.7"
+  s.add_runtime_dependency "hashie", ">= 1.2"
+  s.add_runtime_dependency "inflection"
+  s.add_runtime_dependency "multi_json"
+  s.add_runtime_dependency "mime-types"
+  s.add_runtime_dependency "multipart-post"
+
+  s.files              = `git ls-files -x Gemfile.lock`.split("\n") rescue ''
+  s.test_files         = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.require_paths      = ["lib"]
+end

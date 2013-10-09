@@ -1,6 +1,6 @@
 class Extension < ActiveRecord::Base
   attr_accessible :name, :download_url, :short_description, :notes, :category, :interface, :author_type, :readme, :download_zip_url, :icon
-  mount_uploader :icon, IconUploader
+  # mount_uploader :icon, IconUploader
 
   require 'open-uri'
 
@@ -64,9 +64,7 @@ class Extension < ActiveRecord::Base
 			return image_link = "https://raw." + stripped_url + "/master/assets/logo.png"
 		end
 	end
-	def icon_thumb
-		self.icon.thumb.url
-	end
+
 	def self.github_sync
 		# lab_repos = self.get_lab_repos
 		# puts "repos: #{lab_repos[1]}"
