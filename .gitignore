@@ -17,3 +17,4 @@
 # Ignore database file
 /config/database.yml/config/application.yml
 /config/*.yml
+/config/initializers/zendesk_oauth.rb
