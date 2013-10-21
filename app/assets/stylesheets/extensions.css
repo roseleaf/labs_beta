@@ -1,5 +1,5 @@
 #filters {padding-left: 0;}
-#filters small{ font-weight: lighter; text-transform: uppercase; color: #999;}
+#filters small{ font-weight: lighter; text-transform: uppercase; color: #999; letter-spacing: 0.2em; }
 #appscontainer{float:left; margin-left: 20px; height: auto;}
 #appscontainer h1, .name h1{ text-transform: none !important;}
 #widgetlist{

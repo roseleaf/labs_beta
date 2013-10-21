@@ -5,14 +5,16 @@ class Api::V1::ZendeskClientController < ApplicationController
 
 	def destroy
 	end
+	def get_auth_url
+		auth_url = @client.auth_url
+		auth_response = {"auth_url"=> auth_url}.to_json
+		render json: auth_response
+	end	
 	def callback
 		code = params[:code]
 
 		begin
 			token = @client.token_return(code)
-
-			logger.info("** token token token token **")
-			logger.info(token.inspect)
 			passback(token)
 		rescue OAuth2::Error => e
 			logger.info("** error error error error **")
@@ -21,13 +23,8 @@ class Api::V1::ZendeskClientController < ApplicationController
 			get_auth_url
 		end
 	end
-	def get_auth_url
-		auth_url = @client.auth_url
-		render json: auth_url 
-	end
 	def passback(token)
-		ticket = @client.get_ticket(token)
-		logger.info("iiiii")
+		ticket = @client.create_client(token)
 		render json: @client.auth_url
 		# redirect_to OAUTH_CONFIG['return_url']		
 	end
@@ -35,14 +32,15 @@ class Api::V1::ZendeskClientController < ApplicationController
     	if params[:subdomain]
     		cookies[:subdomain] = params[:subdomain]
     	else
-	        cookies[:subdomain] = "roseleaf"
+	        cookies[:subdomain] = "support"
 	    end
+	    make_client
     end
 
 	private	
 	def make_client
-		set_account unless cookies[:subdomain]
 		@client = ZendeskClient.new(cookies[:subdomain])
+		get_auth_url
 	end		
 
 end
