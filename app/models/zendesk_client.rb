@@ -10,12 +10,12 @@ class ZendeskClient
   def initialize(subdomain)
     @subdomain = subdomain
     @url = "https://#{@subdomain}.zendesk.com"
-    @oauth_session = OAuth2::Client.new(OAUTH_CONFIG['unique_id'], OAUTH_CONFIG['secret'], site: url, token_url: "/oauth/tokens", authorize_url: "/oauth/authorizations/new")
-    @auth_url = @oauth_session.auth_code.authorize_url(:redirect_uri => OAUTH_CONFIG['return_url'], scope: "read write")
+    @oauth_session = OAuth2::Client.new(ENV['OAUTH_UNIQUE_ID'], ENV['OAUTH_CONFIG'], site: url, token_url: "/oauth/tokens", authorize_url: "/oauth/authorizations/new")
+    @auth_url = @oauth_session.auth_code.authorize_url(:redirect_uri => ENV['OAUTH_RETURN_URL'], scope: "read write")
   end
   def token_return(code)
      # @token = @oauth_session.client_credentials.get_token(scope: "read write" )
-      @oauth_session.auth_code.get_token(code, :redirect_uri => OAUTH_CONFIG['return_url'])
+      @oauth_session.auth_code.get_token(code, :redirect_uri => ENV['OAUTH_RETURN_URL'])
   end
 
   def create_client(token)
