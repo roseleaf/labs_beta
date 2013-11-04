@@ -15,7 +15,6 @@
 /tmp
 
 # Ignore database file
-/config/database.yml/config/application.yml/config/heroku_env.rb
+/config/database.yml/config/application.yml/config/heroku_env.rb/conifg/zendesk_oauth.yml/config/initializers/zendesk_oauth.rb
 /config/*.yml
-/config/initializers/zendesk_oauth.rb
 /config/heroku_env.rb

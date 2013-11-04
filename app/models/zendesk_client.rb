@@ -36,21 +36,24 @@ class ZendeskClient
     gh_response = open(url)
 
     upload_id = @api_client.connection.post "#{@url}/api/v2/apps/uploads", { :file => gh_response }
-#    create_job(upload_id, extension)
+    create_job(upload_id, extension)
   end
 
-  # def create_job(upload_id, extension)
-  #   job_id = @api_client.connection.post "#{@url}/apps.json", { "name" => extension.name, "short_description" => extension.short_description, "upload_id" => upload_id }
-  #   while check_upload_status(job_id) !== 'completed' 
-  #     check_upload_status(job_id)  
-  #   end
+  def create_job(upload_id, extension)
+    job_id = @api_client.connection.post "#{@url}/apps.json", { "name" => extension.name, "short_description" => extension.short_description, "upload_id" => upload_id }
+    while check_upload_status(job_id) != 'completed' 
+      check_upload_status(job_id)
+      sleep(5) 
+    end
 
-  # end
+  end
 
-  # def check_upload_status(job_id)
-  #   response = @api_client.connection.send.get "#{@url}/apps/job_statuses/{job_id}"
-  #   status = response.status
-  # end
+  def check_upload_status(job_id)
+    response = @api_client.connection.send.get "#{@url}/apps/job_statuses/{job_id}"
+    status = response.status
+    logger.info response
+    return status
+  end
 
   # def install_app(app_id, settings)
   #   @api_client.connection.send(:post, "#{@url}/apps/installations") do |req|
