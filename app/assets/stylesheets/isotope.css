@@ -1,14 +1,22 @@
 .isotope,
-.isotope .isotope-item, #main {
+.isotope .isotope-item, #main, .item {
   /* change duration value to whatever you like */
   -webkit-transition-duration: 0.8s;
      -moz-transition-duration: 0.8s;
       -ms-transition-duration: 0.8s;
        -o-transition-duration: 0.8s;
           transition-duration: 0.8s;
-}
+  
+/*  -webkit-transition-timing-function: linear, linear, ease-in, linear;
+  -moz-transition-timing-function: linear, linear, ease-in, linear;
+  -o-transition-timing-function: linear, linear, ease-in, linear;
+    transition-timing-function: linear, linear, ease-in, linear;*/
 
-.isotope .isotope-item, #main {
+    -webkit-transition-delay: 0s, 0s, 200ms, 0s;
+    -moz-transition-delay: 0s, 0s, 200ms, 0s;
+    -o-transition-delay: 0s, 0s, 200ms, 0s;
+    transition-delay: 0s, 0s, 200ms, 0s;
+
   -webkit-transition-property: height, width, background;
      -moz-transition-property: height, width, background;
       -ms-transition-property: height, width, background;
@@ -16,10 +24,21 @@
           transition-property: height, width, background;
 }
 
-.isotope .isotope-item, #main {
+/*.isotope .isotope-item, #main {
+
+}*/
+
+.isotope .isotope-item, #mainm .item {
   -webkit-transition-property: -webkit-transform, opacity;
      -moz-transition-property:    -moz-transform, opacity;
       -ms-transition-property:     -ms-transform, opacity;
        -o-transition-property:      -o-transform, opacity;
           transition-property:         transform, opacity;
 }
+/*.isotope-item{
+    -moz-transition: height 0.4s, width: 0.4s, opacity: 1s, background 500ms ease-in 200ms, -moz-transform 2s;
+    -webkit-transition: height 0.4s, width: 0.4s, opacity: 1s, background 500ms ease-in 200ms, -webkit-transform 2s;
+    -o-transition: height 0.4s, width: 0.4s, opacity: 1s, background 500ms ease-in 200ms, -o-transform 2s;
+    transition: height 0.4s, width: 0.4s, opacity: 1s, background 500ms ease-in 200ms, transform 2s;
+}
+*/

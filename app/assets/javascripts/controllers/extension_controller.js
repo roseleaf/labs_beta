@@ -2,7 +2,7 @@
 
 App.ExtensionController = Ember.ObjectController.extend({
   isEditing: false,
-  needs: ['extensionEdit'],	
+  needs: ['extensionEdit'],
   recordsLoaded: (function() {
     return !this.get('content').findProperty('isLoaded', false);
   }).property('content.@each.isLoaded'),
@@ -27,5 +27,5 @@ App.ExtensionController = Ember.ObjectController.extend({
       // return to the main contacts listing page
       this.get('target.router').transitionTo('extensions.index');
     }
-  }  
+  }
 });

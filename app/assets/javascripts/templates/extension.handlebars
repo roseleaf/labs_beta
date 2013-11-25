@@ -1,13 +1,15 @@
+{{#with model}}
 <div class="name">
   <h1>{{name}} <small class="muted">by {{author_type}}</small></h1>
 </div>
 <div id="singleapp">
 	<div class="description">
 		<p class="shortDescript">{{short_description}}</p>
-		<p> {{markdown notes}}</p>
+		<p> {{markdown notes}}</p> 
 		<p class="downloadButton">
 			<a {{ action 'showModal' target='view'}}class="bottom-right-link">Download</a>
 		</p>
 	</div>
 </div>
+{{/with}}
 {{outlet slider}}

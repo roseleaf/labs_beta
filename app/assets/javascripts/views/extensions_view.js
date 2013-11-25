@@ -1,6 +1,6 @@
 App.ExtensionsView = Ember.View.extend({
 	didInsertElement: function(){
-		this.displayFilter();
+		Ember.run.next (this, this.displayFilter);
 	},
 
 	displayFilter: function(){

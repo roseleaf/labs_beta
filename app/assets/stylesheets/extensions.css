@@ -1,7 +1,7 @@
 #filters {padding-left: 0;}
 #filters small{ font-weight: lighter; text-transform: uppercase; color: #999; letter-spacing: 0.2em; }
-#appscontainer{float:left; margin-left: 20px; height: auto;}
-#appscontainer h1, .name h1{ text-transform: none !important;}
+#appscontainer{float:left; margin-left: 20px; height: auto; min-height: 300px;}
+/*#appscontainer h1, .name h1{ text-transform: none !important;}*/
 #widgetlist{
 	height: 95px; 
 	padding: 0; padding-bottom: 30px;
@@ -9,7 +9,17 @@
 	overflow-y: hidden;
 	min-width: 1300px;
 }
-#widgetlist a, .appname{ height: 100%; width: 95%; display: block; color: black; margin: 0 auto;
+#widgetlist a { height: 100%; margin: 0 auto; }
+#widgetlist a, .appname{ width: 95%; display: block; color: black; }
+.appname { height: 45px; margin: 9px auto; text-transform: capitalize; }
+.appdesc {
+width: 85px;
+margin: 0 auto;
+font-size: 12px;
+text-align: center;
+word-wrap: break-word;
+overflow: hidden;
+display: block;
 }
 #widgetlist a:visited{color: black;}
 .listmask{ overflow: hidden; height: 102px; margin: 0 3px 0 20px; }
@@ -26,9 +36,18 @@
 	display: inline;
 	position: relative;
 }
-#widgetlist li.whitebox.item{ padding: 10px 0 10px 0; }
-.item:hover, #sliderback:hover{ background: #ddd; }
+#widgetlist li.item{ padding: 10px 0 10px 0; 
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+#sliderback:hover{ background: #ddd; }
+.item:hover, #sliderback:hover {
+	background: #D4DBC9;
+/* background: #FAFCF8;
+box-shadow: inset 0px 0px 19px 4px #D4DBC9; */
+}
 .item a{ width: 100%; height: 100%; display: block; }
+.item a:visited, .item a { color: #999; }
 #filterhead{font-family: 'DINNextLTPro-Light'; margin: 15px 0 0 633px; width: 92px; height: 50px; text-align: right;}
 #singleapp{
 max-width: 515px;
@@ -42,7 +61,8 @@ small.muted{
 	color: black;
 }
 .name{margin-top: 0; margin-left: 25px; width: 100%; float: left;}
-.name h1{ font-family: "DINNextLTPro-Light"; margin-left: -2px; }
+.name h1{ font-family: "DINNextLTPro-Light"; margin-left: -2px; text-transform: capitalize; }
+.name h1 small {text-transform: none;}
 .shortDescript{ 
 	padding-bottom: 22px;
 	width: 100%;
@@ -65,12 +85,12 @@ margin-left: -40px;
 display: none;
 }
 .rightarrow{
-position: absolute;
-width: 42px;
-height: 42px;
-background: url('/assets/arrows.png');
-background-position: -44px 0;
-margin-left: 570px;
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	background: url('/assets/arrows.png');
+	background-position: -44px 0;
+	margin-left: 570px;
 }
 .leftarrow:hover{ background-position: 0 41px; }
 .rightarrow:hover{ background-position: -44px 41px; }
@@ -98,7 +118,6 @@ width: 32px;
 height: 23px;
 background-position: 50px 0;
 float: left;
-
 }
 .gridview {
 background: url('/assets/arrows.png');
@@ -116,30 +135,41 @@ cursor: pointer;
 margin-left: 12px;
 }
 #widgetgrid li {
-display: inline;
-width: 120px;
-float: left;
-height: 140px;
-margin: 5px;
-padding: 0;
-text-align: center;
-margin-bottom: 23px;
+	display: inline;
+	width: 120px;
+	float: left;
+	height: 140px;
+	margin: 5px;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 23px;
+	overflow: hidden; 
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+		
 }
 #widgetgrid img{
-	width: 100%;
-	height: 100px;
-	margin-top: -18px;
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-	-moz-border-top-right-radius: 3px;
+	width: 70%;
+	height: 70px;
+	margin-top: 2px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
 	-moz-border-top-left-radius: 3px;
 }
+#widgetgrid a {
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+#widgetgrid a:hover { margin-top: -75px; }
 #widgetgrid{
 width: 600px;
 height: 100%;
-min-height: 160px;
+min-height: 100px;
 margin-left: -60px;
 overflow: visible !important;
+margin-top: -20px;
 }
 #sliderlist{
 width: 900px;

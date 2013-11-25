@@ -1,6 +1,6 @@
 App.GetstartedView = Ember.View.extend({
   didInsertElement: function() {
-    this.setActiveTab();
+    Ember.run.next(this, this.setActiveTab);
   },
   setActiveTab: function(){
     $('#directionsType a').click(function(){

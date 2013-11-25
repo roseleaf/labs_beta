@@ -16,9 +16,8 @@ gem 'mysql2'
 gem 'rufus-scheduler'
 gem 'oauth2'
 gem 'zendesk_api'
+gem 'httparty'
 # gem 'zendesk_api_client_rb', :git => 'git://github.com/roseleaf/zendesk_api_client_rb.git'
-
-# http://developer.zendesk.com/documentation/apps/reference/api.html
 
 # Gems used only for assets and not required
 # in production environments by default.

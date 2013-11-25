@@ -1,7 +1,7 @@
 class Extension < ActiveRecord::Base
-  attr_accessible :name, :download_url, :short_description, :notes, :category, :interface, :author_type, :readme, :download_zip_url, :icon
+  attr_accessible :name, :download_url, :short_description, :notes, :category, :interface, :author_type, :readme, :download_zip_url, :icon, :github_id
   # mount_uploader :icon, IconUploader
-
+  require 'httparty'
   require 'open-uri'
 
   	# this method may get more specific later:
@@ -28,11 +28,7 @@ class Extension < ActiveRecord::Base
 	end
 
 	def readme
-		if self.interface == 'classic'
-			return self.notes
-		else
-			return fetch_readme
-		end
+		self.notes
 	end
 
 	def fetch_readme
@@ -55,6 +51,7 @@ class Extension < ActiveRecord::Base
 			contents = self.notes
 		end
 		self.notes = contents
+		self.save!
 		return self.notes
 	end
 	def icon_url
@@ -66,18 +63,27 @@ class Extension < ActiveRecord::Base
 	end
 
 	def self.github_sync
-		# lab_repos = self.get_lab_repos
-		# puts "repos: #{lab_repos[1]}"
-		Extension.find_each(batch_size: 10) do |extension|
-			puts "ladeedaa"
+		current_extensions = []
+		lab_repos = self.get_lab_repos
+		Extension.find_each do |extension|
+			current_extensions << extension.github_id
+  		end
+  		ap current_extensions
+  		lab_repos.each do |repo|  
+  			if repo.class == 'Hash' && !current_extensions.include?(repo['id']) && repo['private'] == false
+  				ex = Extension.create()
+  				ex.update_attributes(name: repo['name'].gsub(/_/, ' '), download_url: repo['html_url'], short_description: repo['description'], interface: "lotus", author_type: "zendesk", notes: "This extension is brand new! Notes are on their way.", github_id: repo['id'])
+  				ex.fetch_readme
+  			end
   		end
   	end
   	def self.get_lab_repos
 	    begin
-	      JSON.parse HTTParty.get('https://api.github.com/orgs/zendesklabs/repos').response.body
+	      repos = HTTParty.get('https://api.github.com/orgs/zendesklabs/repos')
 	    rescue
 	      nil
 	    end	
+	    return repos
 	end  		
 end
 

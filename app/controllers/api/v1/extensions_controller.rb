@@ -2,7 +2,6 @@ class Api::V1::ExtensionsController < ApplicationController
   respond_to :json    
   # before_filter :restrict_access, :except => [:index, :show]
 
-
   def index
     respond_with Extension.all
   end
@@ -10,43 +9,6 @@ class Api::V1::ExtensionsController < ApplicationController
   def show
     respond_with Extension.find(params[:id])
   end
-
-  def new
-    @extension = Extension.new
-
-    respond_to do |format|
-      format.json { render json: @extension }
-    end
-  end
-
-  def edit
-    @extension = Extension.find(params[:id])
-  end
-
-  def create
-    @extension = Extension.new(params[:extension])
-
-    respond_to do |format|
-      if @extension.save
-        format.json { render json: @extension, status: :created, location: @extension }
-      else
-        format.json { render json: @extension.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  def update
-    @extension = Extension.find(params[:id])
-
-    respond_to do |format|
-      if @extension.update_attributes(params[:extension])
-        format.json { head :no_content }
-      else
-        format.json { render json: @extension.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
   def destroy
     @extension = Extension.find(params[:id])
     @extension.destroy
@@ -68,6 +30,11 @@ class Api::V1::ExtensionsController < ApplicationController
     end    
   end
 
+  # VERY temporarily set a route for this. add to rufus scheduler when worker is set up on production server
+  def github_pull
+    Extension.github_sync
+  end
+
 private
 
   def restrict_access
@@ -76,3 +43,37 @@ private
 	end
   end    
 end
+
+# def update
+#   @extension = Extension.find(params[:id])
+
+#   respond_to do |format|
+#     if @extension.update_attributes(params[:extension])
+#       format.json { head :no_content }
+#     else
+#       format.json { render json: @extension.errors, status: :unprocessable_entity }
+#     end
+#   end
+# end
+# def new
+#   @extension = Extension.new
+
+#   respond_to do |format|
+#     format.json { render json: @extension }
+#   end
+# end
+# def edit
+#   @extension = Extension.find(params[:id])
+# end
+
+# def create
+#   @extension = Extension.new(params[:extension])
+
+#   respond_to do |format|
+#     if @extension.save
+#       format.json { render json: @extension, status: :created, location: @extension }
+#     else
+#       format.json { render json: @extension.errors, status: :unprocessable_entity }
+#     end
+#   end
+# end
