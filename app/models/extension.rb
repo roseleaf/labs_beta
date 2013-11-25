@@ -68,7 +68,7 @@ class Extension < ActiveRecord::Base
 		Extension.find_each do |extension|
 			current_extensions << extension.github_id
   		end
-  		ap current_extensions
+  		puts current_extensions
   		lab_repos.each do |repo|  
   			if repo.class == 'Hash' && !current_extensions.include?(repo['id']) && repo['private'] == false
   				ex = Extension.create()

@@ -117,7 +117,7 @@ class Api::V1::ZendeskClientController < ApplicationController
 		session[:code] = params[:code] if params[:code]
 		session[:extension] = params[:extension] if params[:extension]
 	    logger.info("jijijiji")
-	    logger.ap(params) 
+	    logger.info(params) 
     end
     def set_parameters
     	settings = params[:app_settings]
