@@ -6,13 +6,13 @@ class ApplicationController < ActionController::Base
 
   def log_sesh
   	logger.info '--------------------'
-  	logger.ap session
+  	logger.info session
   	logger.info '--------------------'
   end
 
   def zendesk_client
   	logger.info '====================='
-  	logger.ap session
+  	logger.info session
   	logger.info '====================='
   	ZendeskClient.new( session[:subdomain], session[:extension] )
   end
