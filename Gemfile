@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 ruby '1.9.3'
-
+#ruby '2.0.0'
 gem "ember-source", "~> 1.0.0.rc6"
 gem 'active_model_serializers'
 gem 'jquery-rails'
@@ -36,6 +35,7 @@ end
 
 
 group :development, :test do
+  gem 'awesome_print'
 	gem 'quiet_assets'
   gem 'rspec-rails'
   # gem 'rb-fsevent'
@@ -43,6 +43,7 @@ group :development, :test do
   gem "jasminerice"
   gem 'jasmine-rails'
   gem 'guard-jasmine'
+  gem 'pry'
 end
 
 # To use ActiveModel has_secure_password

@@ -45,6 +45,7 @@ GEM
       multi_json (~> 1.0)
     addressable (2.3.5)
     arel (3.0.2)
+    awesome_print (1.2.0)
     barber (0.4.2)
       ember-source
       execjs
@@ -236,6 +237,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  awesome_print
   bootstrap-sass (= 2.0.3.1)
   css_parser
   ember-rails!
@@ -248,6 +250,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   oauth2
+  pry
   quiet_assets
   rack-cors
   rails (= 3.2.13)
