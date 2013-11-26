@@ -151,9 +151,10 @@ footer a {
   border-top-left-radius: 3px;
   color: #80A41A;
   margin-top: -79px;
-  margin-left: 120px;
+  margin-left: 118px;
   border-top-right-radius: 3px;
   -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
   box-shadow: 0px -1px 1px #CCC;
   text-transform: uppercase;
 }
