@@ -65,12 +65,10 @@ class Extension < ActiveRecord::Base
 	def self.github_sync
 		current_extensions = []
 		lab_repos = self.get_lab_repos
-		Extension.find_each do |extension|
-			current_extensions << extension.github_id
-  		end
+		Extension.all().each { |extension| current_extensions << extension.github_id }
   		puts current_extensions
   		lab_repos.each do |repo|  
-  			if repo.class == 'Hash' && !current_extensions.include?(repo['id']) && repo['private'] == false
+  			if !current_extensions.include?(repo['id']) && repo['private'] == false
   				ex = Extension.create()
   				ex.update_attributes(name: repo['name'].gsub(/_/, ' '), download_url: repo['html_url'], short_description: repo['description'], interface: "lotus", author_type: "zendesk", notes: "This extension is brand new! Notes are on their way.", github_id: repo['id'])
   				ex.fetch_readme
@@ -79,7 +77,9 @@ class Extension < ActiveRecord::Base
   	end
   	def self.get_lab_repos
 	    begin
-	      repos = HTTParty.get('https://api.github.com/orgs/zendesklabs/repos')
+	      repos = HTTParty.get('https://api.github.com/orgs/zendesklabs/repos',     
+	      :headers => { "User-Agent" => "roseleaf"})
+
 	    rescue
 	      nil
 	    end	

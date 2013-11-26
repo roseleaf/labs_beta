@@ -20,7 +20,7 @@ App.ExtensionController = Ember.ObjectController.extend({
   },
 
   destroyRecord: function() {
-    if (window.confirm("Are you sure you want to delete this contact?")) {
+    if (window.confirm("Are you sure you want to delete this app?")) {
       this.get('model').deleteRecord();
       this.get('store').commit();
 
