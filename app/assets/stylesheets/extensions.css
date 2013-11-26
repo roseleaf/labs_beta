@@ -50,6 +50,7 @@ box-shadow: inset 0px 0px 19px 4px #D4DBC9; */
 .item a:visited, .item a { color: #999; }
 #filterhead{font-family: 'DINNextLTPro-Light'; margin: 15px 0 0 633px; width: 92px; height: 50px; text-align: right;}
 #singleapp{
+	min-height: 200px;
 max-width: 515px;
 /*border: 2px solid #ddd;
 background: #FFF;*/
