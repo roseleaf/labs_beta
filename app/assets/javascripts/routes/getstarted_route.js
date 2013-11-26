@@ -21,5 +21,8 @@ App.GetstartedRoute = Ember.Route.extend({
 	      		$(this).addClass('active');
 	    	});
 	  	});
+	},
+	deactivate: function(){
+		this.render('', {into: 'application', outlet: 'startNav'});		
 	}
 });
