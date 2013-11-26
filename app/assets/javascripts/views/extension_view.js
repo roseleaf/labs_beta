@@ -5,6 +5,7 @@ App.ExtensionView = Ember.View.extend({
 			extension: this.controller.get('content')
 		})).appendTo('body');
 		$('#overlay').fadeIn(700);
+		$("html, body").delay(500).animate({ scrollTop: 0 }, 'slow');
 		return this.modal;
 	},
 	willClearRender: function(){
