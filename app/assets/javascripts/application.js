@@ -9,8 +9,12 @@
 //= require_self
 //= require zenlabs_beta
 
+//Ember.FEATURES['query-params'] = true;
 Ember.ENV.EXPERIMENTAL_CONTROL_HELPER = true;
-App = Ember.Application.create();
+App = Ember.Application.create({
+	Store: DS.Store.extend({
+	})
+});
 
 
 
