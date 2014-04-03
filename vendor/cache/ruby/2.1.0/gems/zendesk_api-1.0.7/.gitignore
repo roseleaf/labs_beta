@@ -1,0 +1,12 @@
+pkg
+./doc/*
+./doc/**/*
+*swp
+spec/fixtures/cassettes
+spec/fixtures/credentials.yml
+coverage
+.yardoc
+example.rb
+bin/*.yml
+.sass-cache
+config/mongod

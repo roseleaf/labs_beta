@@ -77,7 +77,7 @@ class Extension < ActiveRecord::Base
   	end
   	def self.get_lab_repos
 	    begin
-	      repos = HTTParty.get('https://api.github.com/orgs/zendesklabs/repos',     
+	      repos = HTTParty.get('https://api.github.com/orgs/zendesklabs/repos?type=public&per_page=100',     
 	      :headers => { "User-Agent" => "roseleaf"})
 
 	    rescue

@@ -3,7 +3,7 @@
   	{{#each model}}
 		<li {{bindAttr class="category :item"}}>
 			{{#linkTo 'extension' this}}
-				<img {{bindAttr src="icon_url"}} onerror="this.src='assets/images/default.png';"/>
+				<img {{bindAttr src="icon_url"}} onerror="this.src='assets/default.png';"/>
 				<span class="appname">{{name}}</span>
 				{{#if short_description}}
 					<span class="appdesc">{{{trimString short_description}}}</span>

@@ -1,0 +1,38 @@
+/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/bin/ruby extconf.rb 
+checking for main() in -lc... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling parser.c
+parser.rl:142:7: warning: implicit declaration of function 'thin_http_parser_has_error' is invalid in C99 [-Wimplicit-function-declaration]
+  if (thin_http_parser_has_error(parser) ) {
+      ^
+parser.rl:144:14: warning: implicit declaration of function 'thin_http_parser_is_finished' is invalid in C99 [-Wimplicit-function-declaration]
+  } else if (thin_http_parser_is_finished(parser) ) {
+             ^
+2 warnings generated.
+compiling thin.c
+thin.c:243:3: warning: implicit declaration of function 'thin_http_parser_init' is invalid in C99 [-Wimplicit-function-declaration]
+  thin_http_parser_init(hp);
+  ^
+thin.c:295:3: warning: implicit declaration of function 'thin_http_parser_finish' is invalid in C99 [-Wimplicit-function-declaration]
+  thin_http_parser_finish(http);
+  ^
+thin.c:297:10: warning: implicit declaration of function 'thin_http_parser_is_finished' is invalid in C99 [-Wimplicit-function-declaration]
+  return thin_http_parser_is_finished(http) ? Qtrue : Qfalse;
+         ^
+thin.c:335:5: warning: implicit declaration of function 'thin_http_parser_execute' is invalid in C99 [-Wimplicit-function-declaration]
+    thin_http_parser_execute(http, dptr, dlen, from);
+    ^
+thin.c:339:8: warning: implicit declaration of function 'thin_http_parser_has_error' is invalid in C99 [-Wimplicit-function-declaration]
+    if(thin_http_parser_has_error(http)) {
+       ^
+5 warnings generated.
+linking shared-object thin_parser.bundle
+ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 thin_parser.bundle ./.gem.20140403-46296-14lbdu1
+installing default thin_parser libraries

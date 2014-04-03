@@ -26,6 +26,6 @@
 	</div>
 	<div class="modal-footer">
 		<button {{action "dismissModal" target="view"}} class="btn close">Cancel download</button>
-		<a {{bindAttr href="zip_url"}} class="agree btn btn-inverse">Agree and download this app</a>
+		<button class="agree" {{action "download" zip_url target="view"}}>Agree and download this app</button>
 	</div>
 </div>

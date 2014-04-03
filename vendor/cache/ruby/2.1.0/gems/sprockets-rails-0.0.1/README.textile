@@ -1,0 +1,91 @@
+h1. Sprockets-rails
+
+Sprockets-rails sets up your Rails application for use with "Sprockets":http://github.com/sstephenson/sprockets/.
+
+h2. Installation
+  
+The first thing you need to do is install the Sprockets RubyGem. Just run;
+
+bc. gem install --remote sprockets
+
+For more information about installing and using Sprockets, check out the "Sprockets website":http://getsprockets.org/ and the "Sprockets github project":http://github.com/sstephenson/sprockets. 
+
+Sprockets-rails can be installed as a gem or as a plugin;
+
+h3. Installing as a gem
+
+Add this to your @environment.rb@ file;
+
+bc. config.gem 'sprockets-rails', :source => 'http://gemcutter.org'
+
+And run;
+
+bc. rake gems:install
+
+Once the gem is installed, run the generator and you're all set;
+
+bc. script/generate sprockets_rails
+
+The gem is now installed and the required files and folders will be generated into your project.
+
+h3. Installing as a plugin
+
+Run this in the root of your Rails project;
+
+bc. script/plugin install git://github.com/80beans/sprockets-rails.git
+
+The plugin will get installed and the required files and folders will be generated into your project.
+
+h2. Usage
+
+Now you have sprockets-rails installed as a gem or a plugin. You now have @app/javascripts/@ and @vendor/sprockets/@ directories in your application, as well as a @config/sprockets.yml@ file.
+
+Edit your @config/routes.rb@ file to add routes for @SprocketsController@:
+
+bc. ActionController::Routing::Routes.draw do |map|
+  # Add the following line:
+  SprocketsApplication.routes(map) 
+  ...
+end
+
+Now, move your JavaScript source files from @public/javascripts/@ into @app/javascripts/@. All files in all subdirectories of @app/javascripts/@ will be required by Sprockets in alphabetical order, with the exception of @app/javascripts/application.js@, which is required _before any other file_. (You can change this behavior by editing the @source_files@ line of @config/sprockets.yml@.)
+
+The last thing you'll have to do is adjust your HTML templates to call @<%= sprockets_include_tag %>@ instead of @<%= javascript_include_tag ... %>@. 
+
+Once @sprockets-rails@ is installed, you can check out Sprockets plugins into the @vendor/sprockets/@ directory. By default, @sprockets-rails@ configures Sprockets' load path to search @vendor/sprockets/*/src/@, as well as @vendor/plugins/*/javascripts/@. This means that the @javascripts/@ directories of Rails plugins are automatically installed into your Sprockets load path
+
+h2. Using multiple sprockets configurations in a project
+
+Edit your @config/sprockets.rb@ file to name the configurations:
+
+bc. :default:
+  :asset_root: public
+  :load_path:
+    - app/javascripts
+    - vendor/sprockets/*/src
+    - vendor/plugins/*/javascripts
+  :source_files:
+    - app/javascripts/application.js
+:special:
+  :asset_root: public
+  :load_path:
+    - app/javascripts
+    - vendor/sprockets/*/src
+    - vendor/plugins/*/javascripts
+  :source_files:
+    - app/javascripts/special.js
+
+Now, adjust your HTML templates to call @<%= sprockets_include_tag(:config_name) %>@ with the name of the configuration you wish to use. Concatenations are located at @RAILS_ROOT/sprockets/<config_name>.js@, except for the default configuration, whose concatenation located at @RAILS_ROOT/sprockets.js@.
+                                                         
+
+h2. How it works
+
+Sprockets-rails includes a controller named @SprocketsController@ that renders your application's Sprockets concatenation. When caching is enabled, e.g. in production mode, @SprocketsController@ uses Rails page caching to save the concatenated output to @public/sprockets.js@ the first time it is requested. When caching is disabled, e.g. in development mode, @SprocketsController@ will render a fresh concatenation any time a source file changes.
+
+To source Sprockets' JavaScript concatenation from your HTML templates, use the provided @sprockets_include_tag@ helper.
+
+Sprockets-rails also includes a set of Rake tasks for generating the concatenation (@rake sprockets:install_script@) and installing provided assets (@rake sprockets:install_assets@). Run @sprockets:install_assets@ any time you add or update a Sprockets plugin in your application. Add @after "deploy:update_code", "sprockets:install_script"@ as a "Capistrano":http://www.capify.org/ post-deploy hook to generate the Sprockets concatenation on your servers automatically at deploy time.
+
+h2. License
+
+Copyright (c) 2009 Sam Stephenson, released under the MIT license

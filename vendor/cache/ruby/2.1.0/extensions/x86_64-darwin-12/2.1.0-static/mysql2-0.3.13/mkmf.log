@@ -1,0 +1,202 @@
+have_func: checking for rb_thread_blocking_region()... -------------------- yes
+
+"/usr/bin/clang -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0 -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.6 -pipe conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -L/usr/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"/usr/bin/clang -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0 -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.6 -pipe conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -L/usr/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:13:57: warning: 'rb_thread_blocking_region' is deprecated [-Wdeprecated-declarations]
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+                                                        ^
+/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/intern.h:870:18: note: 'rb_thread_blocking_region' declared here
+DEPRECATED(VALUE rb_thread_blocking_region(rb_blocking_function_t *func, void *data1,
+                 ^
+/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0/ruby/config.h:114:52: note: expanded from macro 'DEPRECATED'
+#define DEPRECATED(x) __attribute__ ((deprecated)) x
+                                                   ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_wait_for_single_fd()... -------------------- yes
+
+"/usr/bin/clang -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0 -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.6 -pipe conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -L/usr/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'rb_wait_for_single_fd'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_wait_for_single_fd; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_wait_for_single_fd; return 0; }
+/* end */
+
+"/usr/bin/clang -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0 -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.6 -pipe conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -L/usr/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:13:15: warning: implicit declaration of function 'rb_wait_for_single_fd' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { rb_wait_for_single_fd(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { rb_wait_for_single_fd(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_dup()... -------------------- yes
+
+"/usr/bin/clang -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0 -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.6 -pipe conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -L/usr/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_hash_dup; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_intern3()... -------------------- yes
+
+"/usr/bin/clang -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0 -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.6 -pipe conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -L/usr/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'rb_intern3'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_intern3; return 0; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_intern3; return 0; }
+/* end */
+
+"/usr/bin/clang -o conftest -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0 -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.6 -pipe conftest.c  -L. -L/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/lib -L. -L/Users/mpapis/.sm/pkg/active/lib -L/usr/lib -fPIC -Bstatic -fstack-protector   -arch x86_64   -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
+conftest.c:13:15: warning: implicit declaration of function 'rb_intern3' is invalid in C99 [-Wimplicit-function-declaration]
+int t(void) { rb_intern3(); return 0; }
+              ^
+1 warning generated.
+ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { rb_intern3(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for mysql.h... -------------------- yes
+
+"/usr/bin/clang -E -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0 -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -I/usr/local/Cellar/mysql/5.6.16/include/mysql  -Os -g -fno-strict-aliasing -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.6 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <mysql.h>
+/* end */
+
+--------------------
+
+have_header: checking for errmsg.h... -------------------- yes
+
+"/usr/bin/clang -E -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0 -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -I/usr/local/Cellar/mysql/5.6.16/include/mysql  -Os -g -fno-strict-aliasing -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.6 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <errmsg.h>
+/* end */
+
+--------------------
+
+have_header: checking for mysqld_error.h... -------------------- yes
+
+"/usr/bin/clang -E -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/x86_64-darwin12.0 -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0/ruby/backward -I/Users/ktrujillo/.rvm/rubies/ruby-2.1.0/include/ruby-2.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -I/usr/local/Cellar/mysql/5.6.16/include/mysql  -Os -g -fno-strict-aliasing -O3 -I/Users/mpapis/.sm/pkg/active/include -fPIC -mmacosx-version-min=10.6 -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <mysqld_error.h>
+/* end */
+
+--------------------
+
